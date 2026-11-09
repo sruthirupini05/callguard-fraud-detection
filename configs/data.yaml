@@ -1,0 +1,28 @@
+data:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  manifest_dir: "data/manifests"
+  synthetic_dir: "data/synthetic"
+  audio_dir: "data/audio"
+  
+  languages:
+    - "en"
+    - "hi"
+    - "te"
+    
+  splits:
+    train: 0.70
+    val: 0.15
+    test: 0.15
+    
+  random_seed: 42
+  seeds: [42, 123, 2026]
+  stratify_by: "label"
+  group_by: "call_id"
+
+preprocessing:
+  max_sequence_length: 128
+  vocab_size: 5000
+  lowercase: true
+  strip_accents: false
+  remove_punctuation: false

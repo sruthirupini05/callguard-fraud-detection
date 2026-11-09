@@ -1,0 +1,33 @@
+telephone_channel:
+  target_sample_rate: 8000
+  bandwidth:
+    f_low: 300
+    f_high: 3400
+    filter_order: 5
+  codecs:
+    - "none"
+    - "g711_mulaw"
+    - "g711_alaw"
+    - "amr_nb"
+  snr_levels_db:
+    - 20
+    - 10
+    - 5
+    - 0
+  packet_loss_rates:
+    - 0.00
+    - 0.03
+    - 0.10
+  default_test_matrix:
+    - codec: "g711_mulaw"
+      snr_db: 20
+      packet_loss: 0.00
+    - codec: "g711_mulaw"
+      snr_db: 10
+      packet_loss: 0.03
+    - codec: "amr_nb"
+      snr_db: 5
+      packet_loss: 0.03
+    - codec: "amr_nb"
+      snr_db: 0
+      packet_loss: 0.10

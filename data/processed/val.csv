@@ -1,0 +1,694 @@
+call_id,label,language,category,duration_seconds,raw_transcript,cleaned_transcript,suspicious_phrases,num_turns,split
+CALL_00549,1,en,remote_access_scam,26.56,"CALLER: Dear consumer, your electricity bill update is pending. Your power will be disconnected at 9:30 PM tonight. 
+RECIPIENT: I already paid my electricity bill through Google Pay yesterday! 
+CALLER: Sir, the gateway server did not sync. To update the bill and prevent power cut, install QuickSupport or AnyDesk app from Play Store. 
+RECIPIENT: Is that an official electricity department app? 
+CALLER: Yes sir, it is the government consumer gateway. Install it and tell me the nine-digit code showing on your screen.","caller: dear consumer, your electricity bill update is pending. your power will be disconnected at 9:30 pm tonight. recipient: i already paid my electricity bill through google pay yesterday! caller: sir, the gateway server did not sync. to update the bill and prevent power cut, install quicksupport or anydesk app from play store. recipient: is that an official electricity department app? caller: yes sir, it is the government consumer gateway. install it and tell me the nine-digit code showing on your screen.","[""download AnyDesk"", ""nine digit code"", ""electricity power disconnected""]",5,val
+CALL_00875,1,en,remote_access_scam,26.5,"CALLER: Dear consumer, your electricity bill update is pending. Your power will be disconnected at 9:30 PM tonight. 
+RECIPIENT: I already paid my electricity bill through Google Pay yesterday! 
+CALLER: Sir, the gateway server did not sync. To update the bill and prevent power cut, install QuickSupport or AnyDesk app from Play Store. 
+RECIPIENT: Is that an official electricity department app? 
+CALLER: Yes sir, it is the government consumer gateway. Install it and tell me the nine-digit code showing on your screen.","caller: dear consumer, your electricity bill update is pending. your power will be disconnected at 9:30 pm tonight. recipient: i already paid my electricity bill through google pay yesterday! caller: sir, the gateway server did not sync. to update the bill and prevent power cut, install quicksupport or anydesk app from play store. recipient: is that an official electricity department app? caller: yes sir, it is the government consumer gateway. install it and tell me the nine-digit code showing on your screen.","[""download AnyDesk"", ""nine digit code"", ""electricity power disconnected""]",5,val
+CALL_00458,0,en,doctor_appointment,17.2,"CALLER: Hello, calling from Apollo Clinic regarding your consultation appointment with Dr. Rao today at 5 PM. 
+RECIPIENT: Yes, I will be reaching by 4:45 PM. 
+CALLER: Perfect. Please carry your previous blood reports and prescription card.","caller: hello, calling from apollo clinic regarding your consultation appointment with dr. rao today at 5 pm. recipient: yes, i will be reaching by 4:45 pm. caller: perfect. please carry your previous blood reports and prescription card.",[],3,val
+CALL_00900,0,hi,delivery_confirmation,15.75,"CALLER: Bhaiya Zomato delivery boy bol raha hoon. Aapka delivery location gate par hai ya tower mein? 
+RECIPIENT: Tower B, second floor par le aaiye. 
+CALLER: Theek hai sir, main lift se upar aa raha hoon.","caller: bhaiya zomato delivery boy bol raha hoon. aapka delivery location gate par hai ya tower mein? recipient: tower b, second floor par le aaiye. caller: theek hai sir, main lift se upar aa raha hoon.",[],3,val
+CALL_00233,1,hi,bank_impersonation,36.13,"CALLER: Namaskar sir, main Bank of Baroda ke verification desk se baat kar raha hoon. 
+RECIPIENT: Haan boliye, kya baat hai? 
+CALLER: Sir aapka KYC update pending hai, aur agar aaj verify nahi hua toh aapka account freeze ho jayega. 
+RECIPIENT: Lekin maine pichle mahine hi branch jaakar form bhara tha. 
+CALLER: Sir branch update reject ho gaya tha. Abhi aapke mobile par 6 digit ka OTP aayega, turant verify karein. 
+RECIPIENT: OTP toh kisi ke saath share karne se mana karte hain na? 
+CALLER: Sir main bank system se hoon, koi personal number nahi hai. OTP share karo warna saare transactions ruk jayenge.","caller: namaskar sir, main bank of baroda ke verification desk se baat kar raha hoon. recipient: haan boliye, kya baat hai? caller: sir aapka kyc update pending hai, aur agar aaj verify nahi hua toh aapka account freeze ho jayega. recipient: lekin maine pichle mahine hi branch jaakar form bhara tha. caller: sir branch update reject ho gaya tha. abhi aapke mobile par 6 digit ka otp aayega, turant verify karein. recipient: otp toh kisi ke saath share karne se mana karte hain na? caller: sir main bank system se hoon, koi personal number nahi hai. otp share karo warna saare transactions ruk jayenge.","[""OTP share karo"", ""account freeze ho jayega"", ""turant verify karein""]",7,val
+CALL_00353,1,hi,digital_arrest,28.2,"CALLER: Yeh call Delhi Police Crime Branch se hai. Aapke Aadhaar card par illegal sim cards issue hue hain. 
+RECIPIENT: Maine koi doosra SIM card nahi liya hai officer. 
+CALLER: In numbers se extortion calls kiye gaye hain. Aapko digital arrest mein rakha gaya hai. 
+RECIPIENT: Aap kya keh rahe hain? Mujhe kya karna hoga? 
+CALLER: Aapke bank balance ki investigation hogi. Turant di gayi safe treasury account mein paise transfer karo.",caller: yeh call delhi police crime branch se hai. aapke aadhaar card par illegal sim cards issue hue hain. recipient: maine koi doosra sim card nahi liya hai officer. caller: in numbers se extortion calls kiye gaye hain. aapko digital arrest mein rakha gaya hai. recipient: aap kya keh rahe hain? mujhe kya karna hoga? caller: aapke bank balance ki investigation hogi. turant di gayi safe treasury account mein paise transfer karo.,"[""digital arrest"", ""police case"", ""secret account"", ""paise transfer karo""]",5,val
+CALL_00669,1,te,bank_impersonation,40.36,"CALLER: Namaskaram andi, nenu State Bank of India main branch nundi call chestunnanu. 
+RECIPIENT: Cheppandi sir, em vishayam? 
+CALLER: Mee account lo suspicious transaction jarigindi andi. Ventane verify cheyyali lekapothe account block avtundi. 
+RECIPIENT: Ayyo, nenu em transaction cheyyaledu andi! 
+CALLER: Bhapadakandi sir. Mee mobile ki vachina 6 digit OTP cheppandi, nenu cancel chestanu. 
+RECIPIENT: OTP evvariki cheppoddu ani bank message vachindi kada sir? 
+CALLER: Idhi security cancellation kosame sir. Ventane OTP cheppandi, time ledu.","caller: namaskaram andi, nenu state bank of india main branch nundi call chestunnanu. recipient: cheppandi sir, em vishayam? caller: mee account lo suspicious transaction jarigindi andi. ventane verify cheyyali lekapothe account block avtundi. recipient: ayyo, nenu em transaction cheyyaledu andi! caller: bhapadakandi sir. mee mobile ki vachina 6 digit otp cheppandi, nenu cancel chestanu. recipient: otp evvariki cheppoddu ani bank message vachindi kada sir? caller: idhi security cancellation kosame sir. ventane otp cheppandi, time ledu.","[""OTP cheppandi"", ""account block avtundi"", ""ventane verify cheyyali""]",7,val
+CALL_00715,1,hi,bank_impersonation,37.14,"CALLER: Namaskar sir, main Bank of Baroda ke verification desk se baat kar raha hoon. 
+RECIPIENT: Haan boliye, kya baat hai? 
+CALLER: Sir aapka KYC update pending hai, aur agar aaj verify nahi hua toh aapka account freeze ho jayega. 
+RECIPIENT: Lekin maine pichle mahine hi branch jaakar form bhara tha. 
+CALLER: Sir branch update reject ho gaya tha. Abhi aapke mobile par 6 digit ka OTP aayega, turant verify karein. 
+RECIPIENT: OTP toh kisi ke saath share karne se mana karte hain na? 
+CALLER: Sir main bank system se hoon, koi personal number nahi hai. OTP share karo warna saare transactions ruk jayenge.","caller: namaskar sir, main bank of baroda ke verification desk se baat kar raha hoon. recipient: haan boliye, kya baat hai? caller: sir aapka kyc update pending hai, aur agar aaj verify nahi hua toh aapka account freeze ho jayega. recipient: lekin maine pichle mahine hi branch jaakar form bhara tha. caller: sir branch update reject ho gaya tha. abhi aapke mobile par 6 digit ka otp aayega, turant verify karein. recipient: otp toh kisi ke saath share karne se mana karte hain na? caller: sir main bank system se hoon, koi personal number nahi hai. otp share karo warna saare transactions ruk jayenge.","[""OTP share karo"", ""account freeze ho jayega"", ""turant verify karein""]",7,val
+CALL_00759,1,hi,bank_impersonation,40.45,"CALLER: Namaskar sir, main Bank of Baroda ke verification desk se baat kar raha hoon. 
+RECIPIENT: Haan boliye, kya baat hai? 
+CALLER: Sir aapka KYC update pending hai, aur agar aaj verify nahi hua toh aapka account freeze ho jayega. 
+RECIPIENT: Lekin maine pichle mahine hi branch jaakar form bhara tha. 
+CALLER: Sir branch update reject ho gaya tha. Abhi aapke mobile par 6 digit ka OTP aayega, turant verify karein. 
+RECIPIENT: OTP toh kisi ke saath share karne se mana karte hain na? 
+CALLER: Sir main bank system se hoon, koi personal number nahi hai. OTP share karo warna saare transactions ruk jayenge.","caller: namaskar sir, main bank of baroda ke verification desk se baat kar raha hoon. recipient: haan boliye, kya baat hai? caller: sir aapka kyc update pending hai, aur agar aaj verify nahi hua toh aapka account freeze ho jayega. recipient: lekin maine pichle mahine hi branch jaakar form bhara tha. caller: sir branch update reject ho gaya tha. abhi aapke mobile par 6 digit ka otp aayega, turant verify karein. recipient: otp toh kisi ke saath share karne se mana karte hain na? caller: sir main bank system se hoon, koi personal number nahi hai. otp share karo warna saare transactions ruk jayenge.","[""OTP share karo"", ""account freeze ho jayega"", ""turant verify karein""]",7,val
+CALL_00593,1,te,bank_impersonation,37.6,"CALLER: Namaskaram andi, nenu State Bank of India main branch nundi call chestunnanu. 
+RECIPIENT: Cheppandi sir, em vishayam? 
+CALLER: Mee account lo suspicious transaction jarigindi andi. Ventane verify cheyyali lekapothe account block avtundi. 
+RECIPIENT: Ayyo, nenu em transaction cheyyaledu andi! 
+CALLER: Bhapadakandi sir. Mee mobile ki vachina 6 digit OTP cheppandi, nenu cancel chestanu. 
+RECIPIENT: OTP evvariki cheppoddu ani bank message vachindi kada sir? 
+CALLER: Idhi security cancellation kosame sir. Ventane OTP cheppandi, time ledu.","caller: namaskaram andi, nenu state bank of india main branch nundi call chestunnanu. recipient: cheppandi sir, em vishayam? caller: mee account lo suspicious transaction jarigindi andi. ventane verify cheyyali lekapothe account block avtundi. recipient: ayyo, nenu em transaction cheyyaledu andi! caller: bhapadakandi sir. mee mobile ki vachina 6 digit otp cheppandi, nenu cancel chestanu. recipient: otp evvariki cheppoddu ani bank message vachindi kada sir? caller: idhi security cancellation kosame sir. ventane otp cheppandi, time ledu.","[""OTP cheppandi"", ""account block avtundi"", ""ventane verify cheyyali""]",7,val
+CALL_00230,0,te,hospital_appointment,16.85,"CALLER: Namaskaram, KIMS Hospital reception nundi call andi. Repu mee doctor appointment re-scheduled ayyindi. 
+RECIPIENT: E time ki change chesaru andi? 
+CALLER: Repu udayam 11 gantalaki doctor garu untaru andi.","caller: namaskaram, kims hospital reception nundi call andi. repu mee doctor appointment re-scheduled ayyindi. recipient: e time ki change chesaru andi? caller: repu udayam 11 gantalaki doctor garu untaru andi.",[],3,val
+CALL_00170,0,te,customer_support,16.44,"CALLER: Namaskaram andi, nenu ACT Fibernet nundi call chestunnanu. Mee internet complaint resolve ayyinda andi? 
+RECIPIENT: Avunu andi, technician vachi wire change chesaru, ippudu bagane vastondi. 
+CALLER: Chala santhosham andi. Service feedback kosam message vastundi, rating ivvandi.","caller: namaskaram andi, nenu act fibernet nundi call chestunnanu. mee internet complaint resolve ayyinda andi? recipient: avunu andi, technician vachi wire change chesaru, ippudu bagane vastondi. caller: chala santhosham andi. service feedback kosam message vastundi, rating ivvandi.",[],3,val
+CALL_00776,0,te,customer_support,15.15,"CALLER: Namaskaram andi, nenu ACT Fibernet nundi call chestunnanu. Mee internet complaint resolve ayyinda andi? 
+RECIPIENT: Avunu andi, technician vachi wire change chesaru, ippudu bagane vastondi. 
+CALLER: Chala santhosham andi. Service feedback kosam message vastundi, rating ivvandi.","caller: namaskaram andi, nenu act fibernet nundi call chestunnanu. mee internet complaint resolve ayyinda andi? recipient: avunu andi, technician vachi wire change chesaru, ippudu bagane vastondi. caller: chala santhosham andi. service feedback kosam message vastundi, rating ivvandi.",[],3,val
+CALL_00454,0,te,hospital_appointment,16.45,"CALLER: Namaskaram, KIMS Hospital reception nundi call andi. Repu mee doctor appointment re-scheduled ayyindi. 
+RECIPIENT: E time ki change chesaru andi? 
+CALLER: Repu udayam 11 gantalaki doctor garu untaru andi.","caller: namaskaram, kims hospital reception nundi call andi. repu mee doctor appointment re-scheduled ayyindi. recipient: e time ki change chesaru andi? caller: repu udayam 11 gantalaki doctor garu untaru andi.",[],3,val
+CALL_00682,0,hi,delivery_confirmation,17.28,"CALLER: Bhaiya Zomato delivery boy bol raha hoon. Aapka delivery location gate par hai ya tower mein? 
+RECIPIENT: Tower B, second floor par le aaiye. 
+CALLER: Theek hai sir, main lift se upar aa raha hoon.","caller: bhaiya zomato delivery boy bol raha hoon. aapka delivery location gate par hai ya tower mein? recipient: tower b, second floor par le aaiye. caller: theek hai sir, main lift se upar aa raha hoon.",[],3,val
+CALL_00741,1,te,bank_impersonation,41.09,"CALLER: Namaskaram andi, nenu State Bank of India main branch nundi call chestunnanu. 
+RECIPIENT: Cheppandi sir, em vishayam? 
+CALLER: Mee account lo suspicious transaction jarigindi andi. Ventane verify cheyyali lekapothe account block avtundi. 
+RECIPIENT: Ayyo, nenu em transaction cheyyaledu andi! 
+CALLER: Bhapadakandi sir. Mee mobile ki vachina 6 digit OTP cheppandi, nenu cancel chestanu. 
+RECIPIENT: OTP evvariki cheppoddu ani bank message vachindi kada sir? 
+CALLER: Idhi security cancellation kosame sir. Ventane OTP cheppandi, time ledu.","caller: namaskaram andi, nenu state bank of india main branch nundi call chestunnanu. recipient: cheppandi sir, em vishayam? caller: mee account lo suspicious transaction jarigindi andi. ventane verify cheyyali lekapothe account block avtundi. recipient: ayyo, nenu em transaction cheyyaledu andi! caller: bhapadakandi sir. mee mobile ki vachina 6 digit otp cheppandi, nenu cancel chestanu. recipient: otp evvariki cheppoddu ani bank message vachindi kada sir? caller: idhi security cancellation kosame sir. ventane otp cheppandi, time ledu.","[""OTP cheppandi"", ""account block avtundi"", ""ventane verify cheyyali""]",7,val
+CALL_00431,1,hi,bank_impersonation,40.73,"CALLER: Namaskar sir, main Bank of Baroda ke verification desk se baat kar raha hoon. 
+RECIPIENT: Haan boliye, kya baat hai? 
+CALLER: Sir aapka KYC update pending hai, aur agar aaj verify nahi hua toh aapka account freeze ho jayega. 
+RECIPIENT: Lekin maine pichle mahine hi branch jaakar form bhara tha. 
+CALLER: Sir branch update reject ho gaya tha. Abhi aapke mobile par 6 digit ka OTP aayega, turant verify karein. 
+RECIPIENT: OTP toh kisi ke saath share karne se mana karte hain na? 
+CALLER: Sir main bank system se hoon, koi personal number nahi hai. OTP share karo warna saare transactions ruk jayenge.","caller: namaskar sir, main bank of baroda ke verification desk se baat kar raha hoon. recipient: haan boliye, kya baat hai? caller: sir aapka kyc update pending hai, aur agar aaj verify nahi hua toh aapka account freeze ho jayega. recipient: lekin maine pichle mahine hi branch jaakar form bhara tha. caller: sir branch update reject ho gaya tha. abhi aapke mobile par 6 digit ka otp aayega, turant verify karein. recipient: otp toh kisi ke saath share karne se mana karte hain na? caller: sir main bank system se hoon, koi personal number nahi hai. otp share karo warna saare transactions ruk jayenge.","[""OTP share karo"", ""account freeze ho jayega"", ""turant verify karein""]",7,val
+CALL_00188,0,te,hospital_appointment,17.87,"CALLER: Namaskaram, KIMS Hospital reception nundi call andi. Repu mee doctor appointment re-scheduled ayyindi. 
+RECIPIENT: E time ki change chesaru andi? 
+CALLER: Repu udayam 11 gantalaki doctor garu untaru andi.","caller: namaskaram, kims hospital reception nundi call andi. repu mee doctor appointment re-scheduled ayyindi. recipient: e time ki change chesaru andi? caller: repu udayam 11 gantalaki doctor garu untaru andi.",[],3,val
+CALL_00120,0,en,courier_delivery,17.17,"CALLER: Hello sir, BlueDart delivery agent here. I have an Amazon package for flat number 302. 
+RECIPIENT: Yes, I am at home. Are you at the security gate? 
+CALLER: Yes sir, I am entering the building. Please be ready to collect it. No payment needed as it is prepaid.","caller: hello sir, bluedart delivery agent here. i have an amazon package for flat number 302. recipient: yes, i am at home. are you at the security gate? caller: yes sir, i am entering the building. please be ready to collect it. no payment needed as it is prepaid.",[],3,val
+CALL_00037,1,en,remote_access_scam,28.78,"CALLER: Dear consumer, your electricity bill update is pending. Your power will be disconnected at 9:30 PM tonight. 
+RECIPIENT: I already paid my electricity bill through Google Pay yesterday! 
+CALLER: Sir, the gateway server did not sync. To update the bill and prevent power cut, install QuickSupport or AnyDesk app from Play Store. 
+RECIPIENT: Is that an official electricity department app? 
+CALLER: Yes sir, it is the government consumer gateway. Install it and tell me the nine-digit code showing on your screen.","caller: dear consumer, your electricity bill update is pending. your power will be disconnected at 9:30 pm tonight. recipient: i already paid my electricity bill through google pay yesterday! caller: sir, the gateway server did not sync. to update the bill and prevent power cut, install quicksupport or anydesk app from play store. recipient: is that an official electricity department app? caller: yes sir, it is the government consumer gateway. install it and tell me the nine-digit code showing on your screen.","[""download AnyDesk"", ""nine digit code"", ""electricity power disconnected""]",5,val
+CALL_00050,0,hi,delivery_confirmation,17.18,"CALLER: Bhaiya Zomato delivery boy bol raha hoon. Aapka delivery location gate par hai ya tower mein? 
+RECIPIENT: Tower B, second floor par le aaiye. 
+CALLER: Theek hai sir, main lift se upar aa raha hoon.","caller: bhaiya zomato delivery boy bol raha hoon. aapka delivery location gate par hai ya tower mein? recipient: tower b, second floor par le aaiye. caller: theek hai sir, main lift se upar aa raha hoon.",[],3,val
+CALL_00151,1,hi,bank_impersonation,40.32,"CALLER: Namaskar sir, main Bank of Baroda ke verification desk se baat kar raha hoon. 
+RECIPIENT: Haan boliye, kya baat hai? 
+CALLER: Sir aapka KYC update pending hai, aur agar aaj verify nahi hua toh aapka account freeze ho jayega. 
+RECIPIENT: Lekin maine pichle mahine hi branch jaakar form bhara tha. 
+CALLER: Sir branch update reject ho gaya tha. Abhi aapke mobile par 6 digit ka OTP aayega, turant verify karein. 
+RECIPIENT: OTP toh kisi ke saath share karne se mana karte hain na? 
+CALLER: Sir main bank system se hoon, koi personal number nahi hai. OTP share karo warna saare transactions ruk jayenge.","caller: namaskar sir, main bank of baroda ke verification desk se baat kar raha hoon. recipient: haan boliye, kya baat hai? caller: sir aapka kyc update pending hai, aur agar aaj verify nahi hua toh aapka account freeze ho jayega. recipient: lekin maine pichle mahine hi branch jaakar form bhara tha. caller: sir branch update reject ho gaya tha. abhi aapke mobile par 6 digit ka otp aayega, turant verify karein. recipient: otp toh kisi ke saath share karne se mana karte hain na? caller: sir main bank system se hoon, koi personal number nahi hai. otp share karo warna saare transactions ruk jayenge.","[""OTP share karo"", ""account freeze ho jayega"", ""turant verify karein""]",7,val
+CALL_00994,0,hi,customer_support,16.75,"CALLER: Namaste sir, main Jio customer care se bol rahi hoon. Aapka fiber connection ka request mila tha. 
+RECIPIENT: Haan, kal technician aane wale the lekin koi nahi aaya. 
+CALLER: Humein khed hai sir. Humne aaj dopahar 2 baje ka slot book kar diya hai. Technician aapse sampark karenge.","caller: namaste sir, main jio customer care se bol rahi hoon. aapka fiber connection ka request mila tha. recipient: haan, kal technician aane wale the lekin koi nahi aaya. caller: humein khed hai sir. humne aaj dopahar 2 baje ka slot book kar diya hai. technician aapse sampark karenge.",[],3,val
+CALL_00542,0,hi,delivery_confirmation,17.81,"CALLER: Bhaiya Zomato delivery boy bol raha hoon. Aapka delivery location gate par hai ya tower mein? 
+RECIPIENT: Tower B, second floor par le aaiye. 
+CALLER: Theek hai sir, main lift se upar aa raha hoon.","caller: bhaiya zomato delivery boy bol raha hoon. aapka delivery location gate par hai ya tower mein? recipient: tower b, second floor par le aaiye. caller: theek hai sir, main lift se upar aa raha hoon.",[],3,val
+CALL_00045,1,te,digital_arrest,27.83,"CALLER: Idhi Hyderabad Cyber Police Station nundi call andi. Mee Aadhaar card meeda illegal parcels vachayi. 
+RECIPIENT: Sir naaku denitho sambandham ledu sir, nenu government employee ni. 
+CALLER: Mee meeda FIR register ayyindi. Meeru ippudu digital arrest lo unnaru. 
+RECIPIENT: Digital arrest aa? Nenu bayatiki vellavacha? 
+CALLER: Ledu, call cut cheyyakudadhu. Verification kosam money transfer cheyyandi.","caller: idhi hyderabad cyber police station nundi call andi. mee aadhaar card meeda illegal parcels vachayi. recipient: sir naaku denitho sambandham ledu sir, nenu government employee ni. caller: mee meeda fir register ayyindi. meeru ippudu digital arrest lo unnaru. recipient: digital arrest aa? nenu bayatiki vellavacha? caller: ledu, call cut cheyyakudadhu. verification kosam money transfer cheyyandi.","[""digital arrest"", ""police case"", ""money transfer cheyyandi"", ""Aadhaar misuse""]",5,val
+CALL_00846,0,en,doctor_appointment,15.51,"CALLER: Hello, calling from Apollo Clinic regarding your consultation appointment with Dr. Rao today at 5 PM. 
+RECIPIENT: Yes, I will be reaching by 4:45 PM. 
+CALLER: Perfect. Please carry your previous blood reports and prescription card.","caller: hello, calling from apollo clinic regarding your consultation appointment with dr. rao today at 5 pm. recipient: yes, i will be reaching by 4:45 pm. caller: perfect. please carry your previous blood reports and prescription card.",[],3,val
+CALL_00305,1,te,bank_impersonation,37.93,"CALLER: Namaskaram andi, nenu State Bank of India main branch nundi call chestunnanu. 
+RECIPIENT: Cheppandi sir, em vishayam? 
+CALLER: Mee account lo suspicious transaction jarigindi andi. Ventane verify cheyyali lekapothe account block avtundi. 
+RECIPIENT: Ayyo, nenu em transaction cheyyaledu andi! 
+CALLER: Bhapadakandi sir. Mee mobile ki vachina 6 digit OTP cheppandi, nenu cancel chestanu. 
+RECIPIENT: OTP evvariki cheppoddu ani bank message vachindi kada sir? 
+CALLER: Idhi security cancellation kosame sir. Ventane OTP cheppandi, time ledu.","caller: namaskaram andi, nenu state bank of india main branch nundi call chestunnanu. recipient: cheppandi sir, em vishayam? caller: mee account lo suspicious transaction jarigindi andi. ventane verify cheyyali lekapothe account block avtundi. recipient: ayyo, nenu em transaction cheyyaledu andi! caller: bhapadakandi sir. mee mobile ki vachina 6 digit otp cheppandi, nenu cancel chestanu. recipient: otp evvariki cheppoddu ani bank message vachindi kada sir? caller: idhi security cancellation kosame sir. ventane otp cheppandi, time ledu.","[""OTP cheppandi"", ""account block avtundi"", ""ventane verify cheyyali""]",7,val
+CALL_00952,0,hi,customer_support,16.84,"CALLER: Namaste sir, main Jio customer care se bol rahi hoon. Aapka fiber connection ka request mila tha. 
+RECIPIENT: Haan, kal technician aane wale the lekin koi nahi aaya. 
+CALLER: Humein khed hai sir. Humne aaj dopahar 2 baje ka slot book kar diya hai. Technician aapse sampark karenge.","caller: namaste sir, main jio customer care se bol rahi hoon. aapka fiber connection ka request mila tha. recipient: haan, kal technician aane wale the lekin koi nahi aaya. caller: humein khed hai sir. humne aaj dopahar 2 baje ka slot book kar diya hai. technician aapse sampark karenge.",[],3,val
+CALL_00824,0,te,customer_support,15.6,"CALLER: Namaskaram andi, nenu ACT Fibernet nundi call chestunnanu. Mee internet complaint resolve ayyinda andi? 
+RECIPIENT: Avunu andi, technician vachi wire change chesaru, ippudu bagane vastondi. 
+CALLER: Chala santhosham andi. Service feedback kosam message vastundi, rating ivvandi.","caller: namaskaram andi, nenu act fibernet nundi call chestunnanu. mee internet complaint resolve ayyinda andi? recipient: avunu andi, technician vachi wire change chesaru, ippudu bagane vastondi. caller: chala santhosham andi. service feedback kosam message vastundi, rating ivvandi.",[],3,val
+CALL_00457,1,hi,bank_impersonation,37.56,"CALLER: Namaskar sir, main Bank of Baroda ke verification desk se baat kar raha hoon. 
+RECIPIENT: Haan boliye, kya baat hai? 
+CALLER: Sir aapka KYC update pending hai, aur agar aaj verify nahi hua toh aapka account freeze ho jayega. 
+RECIPIENT: Lekin maine pichle mahine hi branch jaakar form bhara tha. 
+CALLER: Sir branch update reject ho gaya tha. Abhi aapke mobile par 6 digit ka OTP aayega, turant verify karein. 
+RECIPIENT: OTP toh kisi ke saath share karne se mana karte hain na? 
+CALLER: Sir main bank system se hoon, koi personal number nahi hai. OTP share karo warna saare transactions ruk jayenge.","caller: namaskar sir, main bank of baroda ke verification desk se baat kar raha hoon. recipient: haan boliye, kya baat hai? caller: sir aapka kyc update pending hai, aur agar aaj verify nahi hua toh aapka account freeze ho jayega. recipient: lekin maine pichle mahine hi branch jaakar form bhara tha. caller: sir branch update reject ho gaya tha. abhi aapke mobile par 6 digit ka otp aayega, turant verify karein. recipient: otp toh kisi ke saath share karne se mana karte hain na? caller: sir main bank system se hoon, koi personal number nahi hai. otp share karo warna saare transactions ruk jayenge.","[""OTP share karo"", ""account freeze ho jayega"", ""turant verify karein""]",7,val
+CALL_00679,1,hi,digital_arrest,30.86,"CALLER: Yeh call Delhi Police Crime Branch se hai. Aapke Aadhaar card par illegal sim cards issue hue hain. 
+RECIPIENT: Maine koi doosra SIM card nahi liya hai officer. 
+CALLER: In numbers se extortion calls kiye gaye hain. Aapko digital arrest mein rakha gaya hai. 
+RECIPIENT: Aap kya keh rahe hain? Mujhe kya karna hoga? 
+CALLER: Aapke bank balance ki investigation hogi. Turant di gayi safe treasury account mein paise transfer karo.",caller: yeh call delhi police crime branch se hai. aapke aadhaar card par illegal sim cards issue hue hain. recipient: maine koi doosra sim card nahi liya hai officer. caller: in numbers se extortion calls kiye gaye hain. aapko digital arrest mein rakha gaya hai. recipient: aap kya keh rahe hain? mujhe kya karna hoga? caller: aapke bank balance ki investigation hogi. turant di gayi safe treasury account mein paise transfer karo.,"[""digital arrest"", ""police case"", ""secret account"", ""paise transfer karo""]",5,val
+CALL_00146,0,hi,delivery_confirmation,17.11,"CALLER: Bhaiya Zomato delivery boy bol raha hoon. Aapka delivery location gate par hai ya tower mein? 
+RECIPIENT: Tower B, second floor par le aaiye. 
+CALLER: Theek hai sir, main lift se upar aa raha hoon.","caller: bhaiya zomato delivery boy bol raha hoon. aapka delivery location gate par hai ya tower mein? recipient: tower b, second floor par le aaiye. caller: theek hai sir, main lift se upar aa raha hoon.",[],3,val
+CALL_00470,0,en,doctor_appointment,17.52,"CALLER: Hello, calling from Apollo Clinic regarding your consultation appointment with Dr. Rao today at 5 PM. 
+RECIPIENT: Yes, I will be reaching by 4:45 PM. 
+CALLER: Perfect. Please carry your previous blood reports and prescription card.","caller: hello, calling from apollo clinic regarding your consultation appointment with dr. rao today at 5 pm. recipient: yes, i will be reaching by 4:45 pm. caller: perfect. please carry your previous blood reports and prescription card.",[],3,val
+CALL_00161,1,en,remote_access_scam,32.27,"CALLER: Dear consumer, your electricity bill update is pending. Your power will be disconnected at 9:30 PM tonight. 
+RECIPIENT: I already paid my electricity bill through Google Pay yesterday! 
+CALLER: Sir, the gateway server did not sync. To update the bill and prevent power cut, install QuickSupport or AnyDesk app from Play Store. 
+RECIPIENT: Is that an official electricity department app? 
+CALLER: Yes sir, it is the government consumer gateway. Install it and tell me the nine-digit code showing on your screen.","caller: dear consumer, your electricity bill update is pending. your power will be disconnected at 9:30 pm tonight. recipient: i already paid my electricity bill through google pay yesterday! caller: sir, the gateway server did not sync. to update the bill and prevent power cut, install quicksupport or anydesk app from play store. recipient: is that an official electricity department app? caller: yes sir, it is the government consumer gateway. install it and tell me the nine-digit code showing on your screen.","[""download AnyDesk"", ""nine digit code"", ""electricity power disconnected""]",5,val
+CALL_00138,0,te,customer_support,18.32,"CALLER: Namaskaram andi, nenu ACT Fibernet nundi call chestunnanu. Mee internet complaint resolve ayyinda andi? 
+RECIPIENT: Avunu andi, technician vachi wire change chesaru, ippudu bagane vastondi. 
+CALLER: Chala santhosham andi. Service feedback kosam message vastundi, rating ivvandi.","caller: namaskaram andi, nenu act fibernet nundi call chestunnanu. mee internet complaint resolve ayyinda andi? recipient: avunu andi, technician vachi wire change chesaru, ippudu bagane vastondi. caller: chala santhosham andi. service feedback kosam message vastundi, rating ivvandi.",[],3,val
+CALL_00577,1,en,remote_access_scam,27.7,"CALLER: Dear consumer, your electricity bill update is pending. Your power will be disconnected at 9:30 PM tonight. 
+RECIPIENT: I already paid my electricity bill through Google Pay yesterday! 
+CALLER: Sir, the gateway server did not sync. To update the bill and prevent power cut, install QuickSupport or AnyDesk app from Play Store. 
+RECIPIENT: Is that an official electricity department app? 
+CALLER: Yes sir, it is the government consumer gateway. Install it and tell me the nine-digit code showing on your screen.","caller: dear consumer, your electricity bill update is pending. your power will be disconnected at 9:30 pm tonight. recipient: i already paid my electricity bill through google pay yesterday! caller: sir, the gateway server did not sync. to update the bill and prevent power cut, install quicksupport or anydesk app from play store. recipient: is that an official electricity department app? caller: yes sir, it is the government consumer gateway. install it and tell me the nine-digit code showing on your screen.","[""download AnyDesk"", ""nine digit code"", ""electricity power disconnected""]",5,val
+CALL_00731,1,te,digital_arrest,27.74,"CALLER: Idhi Hyderabad Cyber Police Station nundi call andi. Mee Aadhaar card meeda illegal parcels vachayi. 
+RECIPIENT: Sir naaku denitho sambandham ledu sir, nenu government employee ni. 
+CALLER: Mee meeda FIR register ayyindi. Meeru ippudu digital arrest lo unnaru. 
+RECIPIENT: Digital arrest aa? Nenu bayatiki vellavacha? 
+CALLER: Ledu, call cut cheyyakudadhu. Verification kosam money transfer cheyyandi.","caller: idhi hyderabad cyber police station nundi call andi. mee aadhaar card meeda illegal parcels vachayi. recipient: sir naaku denitho sambandham ledu sir, nenu government employee ni. caller: mee meeda fir register ayyindi. meeru ippudu digital arrest lo unnaru. recipient: digital arrest aa? nenu bayatiki vellavacha? caller: ledu, call cut cheyyakudadhu. verification kosam money transfer cheyyandi.","[""digital arrest"", ""police case"", ""money transfer cheyyandi"", ""Aadhaar misuse""]",5,val
+CALL_00217,1,te,digital_arrest,30.77,"CALLER: Idhi Hyderabad Cyber Police Station nundi call andi. Mee Aadhaar card meeda illegal parcels vachayi. 
+RECIPIENT: Sir naaku denitho sambandham ledu sir, nenu government employee ni. 
+CALLER: Mee meeda FIR register ayyindi. Meeru ippudu digital arrest lo unnaru. 
+RECIPIENT: Digital arrest aa? Nenu bayatiki vellavacha? 
+CALLER: Ledu, call cut cheyyakudadhu. Verification kosam money transfer cheyyandi.","caller: idhi hyderabad cyber police station nundi call andi. mee aadhaar card meeda illegal parcels vachayi. recipient: sir naaku denitho sambandham ledu sir, nenu government employee ni. caller: mee meeda fir register ayyindi. meeru ippudu digital arrest lo unnaru. recipient: digital arrest aa? nenu bayatiki vellavacha? caller: ledu, call cut cheyyakudadhu. verification kosam money transfer cheyyandi.","[""digital arrest"", ""police case"", ""money transfer cheyyandi"", ""Aadhaar misuse""]",5,val
+CALL_00396,0,hi,delivery_confirmation,15.97,"CALLER: Bhaiya Zomato delivery boy bol raha hoon. Aapka delivery location gate par hai ya tower mein? 
+RECIPIENT: Tower B, second floor par le aaiye. 
+CALLER: Theek hai sir, main lift se upar aa raha hoon.","caller: bhaiya zomato delivery boy bol raha hoon. aapka delivery location gate par hai ya tower mein? recipient: tower b, second floor par le aaiye. caller: theek hai sir, main lift se upar aa raha hoon.",[],3,val
+CALL_00623,1,hi,digital_arrest,28.13,"CALLER: Yeh call Delhi Police Crime Branch se hai. Aapke Aadhaar card par illegal sim cards issue hue hain. 
+RECIPIENT: Maine koi doosra SIM card nahi liya hai officer. 
+CALLER: In numbers se extortion calls kiye gaye hain. Aapko digital arrest mein rakha gaya hai. 
+RECIPIENT: Aap kya keh rahe hain? Mujhe kya karna hoga? 
+CALLER: Aapke bank balance ki investigation hogi. Turant di gayi safe treasury account mein paise transfer karo.",caller: yeh call delhi police crime branch se hai. aapke aadhaar card par illegal sim cards issue hue hain. recipient: maine koi doosra sim card nahi liya hai officer. caller: in numbers se extortion calls kiye gaye hain. aapko digital arrest mein rakha gaya hai. recipient: aap kya keh rahe hain? mujhe kya karna hoga? caller: aapke bank balance ki investigation hogi. turant di gayi safe treasury account mein paise transfer karo.,"[""digital arrest"", ""police case"", ""secret account"", ""paise transfer karo""]",5,val
+CALL_00475,1,hi,bank_impersonation,38.16,"CALLER: Namaskar sir, main Bank of Baroda ke verification desk se baat kar raha hoon. 
+RECIPIENT: Haan boliye, kya baat hai? 
+CALLER: Sir aapka KYC update pending hai, aur agar aaj verify nahi hua toh aapka account freeze ho jayega. 
+RECIPIENT: Lekin maine pichle mahine hi branch jaakar form bhara tha. 
+CALLER: Sir branch update reject ho gaya tha. Abhi aapke mobile par 6 digit ka OTP aayega, turant verify karein. 
+RECIPIENT: OTP toh kisi ke saath share karne se mana karte hain na? 
+CALLER: Sir main bank system se hoon, koi personal number nahi hai. OTP share karo warna saare transactions ruk jayenge.","caller: namaskar sir, main bank of baroda ke verification desk se baat kar raha hoon. recipient: haan boliye, kya baat hai? caller: sir aapka kyc update pending hai, aur agar aaj verify nahi hua toh aapka account freeze ho jayega. recipient: lekin maine pichle mahine hi branch jaakar form bhara tha. caller: sir branch update reject ho gaya tha. abhi aapke mobile par 6 digit ka otp aayega, turant verify karein. recipient: otp toh kisi ke saath share karne se mana karte hain na? caller: sir main bank system se hoon, koi personal number nahi hai. otp share karo warna saare transactions ruk jayenge.","[""OTP share karo"", ""account freeze ho jayega"", ""turant verify karein""]",7,val
+CALL_00009,1,hi,digital_arrest,29.65,"CALLER: Yeh call Delhi Police Crime Branch se hai. Aapke Aadhaar card par illegal sim cards issue hue hain. 
+RECIPIENT: Maine koi doosra SIM card nahi liya hai officer. 
+CALLER: In numbers se extortion calls kiye gaye hain. Aapko digital arrest mein rakha gaya hai. 
+RECIPIENT: Aap kya keh rahe hain? Mujhe kya karna hoga? 
+CALLER: Aapke bank balance ki investigation hogi. Turant di gayi safe treasury account mein paise transfer karo.",caller: yeh call delhi police crime branch se hai. aapke aadhaar card par illegal sim cards issue hue hain. recipient: maine koi doosra sim card nahi liya hai officer. caller: in numbers se extortion calls kiye gaye hain. aapko digital arrest mein rakha gaya hai. recipient: aap kya keh rahe hain? mujhe kya karna hoga? caller: aapke bank balance ki investigation hogi. turant di gayi safe treasury account mein paise transfer karo.,"[""digital arrest"", ""police case"", ""secret account"", ""paise transfer karo""]",5,val
+CALL_00811,1,en,digital_arrest,37.68,"CALLER: This is Officer Vikram Rathore from Mumbai Cyber Crime and CBI headquarters. 
+RECIPIENT: Why are you calling me? I am a law-abiding citizen. 
+CALLER: A parcel containing five passports and synthetic narcotics was intercepted at Mumbai international airport registered under your Aadhaar number. 
+RECIPIENT: I never sent any parcel! Someone must have misused my identity. 
+CALLER: An arrest warrant has been issued against you under the Money Laundering Act. You are currently under digital arrest. 
+RECIPIENT: Digital arrest? What does that mean? How do I clear this? 
+CALLER: You must stay on this video call, do not inform family, and transfer your account funds to the Reserve Bank secret verification account immediately.","caller: this is officer vikram rathore from mumbai cyber crime and cbi headquarters. recipient: why are you calling me? i am a law-abiding citizen. caller: a parcel containing five passports and synthetic narcotics was intercepted at mumbai international airport registered under your aadhaar number. recipient: i never sent any parcel! someone must have misused my identity. caller: an arrest warrant has been issued against you under the money laundering act. you are currently under digital arrest. recipient: digital arrest? what does that mean? how do i clear this? caller: you must stay on this video call, do not inform family, and transfer your account funds to the reserve bank secret verification account immediately.","[""digital arrest"", ""CBI headquarters"", ""illegal parcel"", ""passport seized""]",7,val
+CALL_00066,0,te,hospital_appointment,15.46,"CALLER: Namaskaram, KIMS Hospital reception nundi call andi. Repu mee doctor appointment re-scheduled ayyindi. 
+RECIPIENT: E time ki change chesaru andi? 
+CALLER: Repu udayam 11 gantalaki doctor garu untaru andi.","caller: namaskaram, kims hospital reception nundi call andi. repu mee doctor appointment re-scheduled ayyindi. recipient: e time ki change chesaru andi? caller: repu udayam 11 gantalaki doctor garu untaru andi.",[],3,val
+CALL_00474,0,hi,delivery_confirmation,16.96,"CALLER: Bhaiya Zomato delivery boy bol raha hoon. Aapka delivery location gate par hai ya tower mein? 
+RECIPIENT: Tower B, second floor par le aaiye. 
+CALLER: Theek hai sir, main lift se upar aa raha hoon.","caller: bhaiya zomato delivery boy bol raha hoon. aapka delivery location gate par hai ya tower mein? recipient: tower b, second floor par le aaiye. caller: theek hai sir, main lift se upar aa raha hoon.",[],3,val
+CALL_00115,1,hi,bank_impersonation,40.52,"CALLER: Namaskar sir, main Bank of Baroda ke verification desk se baat kar raha hoon. 
+RECIPIENT: Haan boliye, kya baat hai? 
+CALLER: Sir aapka KYC update pending hai, aur agar aaj verify nahi hua toh aapka account freeze ho jayega. 
+RECIPIENT: Lekin maine pichle mahine hi branch jaakar form bhara tha. 
+CALLER: Sir branch update reject ho gaya tha. Abhi aapke mobile par 6 digit ka OTP aayega, turant verify karein. 
+RECIPIENT: OTP toh kisi ke saath share karne se mana karte hain na? 
+CALLER: Sir main bank system se hoon, koi personal number nahi hai. OTP share karo warna saare transactions ruk jayenge.","caller: namaskar sir, main bank of baroda ke verification desk se baat kar raha hoon. recipient: haan boliye, kya baat hai? caller: sir aapka kyc update pending hai, aur agar aaj verify nahi hua toh aapka account freeze ho jayega. recipient: lekin maine pichle mahine hi branch jaakar form bhara tha. caller: sir branch update reject ho gaya tha. abhi aapke mobile par 6 digit ka otp aayega, turant verify karein. recipient: otp toh kisi ke saath share karne se mana karte hain na? caller: sir main bank system se hoon, koi personal number nahi hai. otp share karo warna saare transactions ruk jayenge.","[""OTP share karo"", ""account freeze ho jayega"", ""turant verify karein""]",7,val
+CALL_00272,0,en,courier_delivery,19.2,"CALLER: Hello sir, BlueDart delivery agent here. I have an Amazon package for flat number 302. 
+RECIPIENT: Yes, I am at home. Are you at the security gate? 
+CALLER: Yes sir, I am entering the building. Please be ready to collect it. No payment needed as it is prepaid.","caller: hello sir, bluedart delivery agent here. i have an amazon package for flat number 302. recipient: yes, i am at home. are you at the security gate? caller: yes sir, i am entering the building. please be ready to collect it. no payment needed as it is prepaid.",[],3,val
+CALL_00897,1,en,bank_impersonation,40.52,"CALLER: Hello sir, I am calling from State Bank of India fraud prevention department. 
+RECIPIENT: Yes, what is the matter? Is there an issue? 
+CALLER: Sir, an unauthorized transaction of forty-five thousand rupees was attempted on your debit card just now. 
+RECIPIENT: What? I did not do any transaction! Please stop it. 
+CALLER: Do not panic sir. To block this transaction immediately, I have sent a six-digit verification code. Please share the OTP immediately. 
+RECIPIENT: Wait, my bank says never share OTP with anyone. 
+CALLER: Sir, this is the security server! If you delay, your account will be blocked today and money will be lost. Read the six digits now, do not disconnect! 
+RECIPIENT: Okay, let me check the SMS.","caller: hello sir, i am calling from state bank of india fraud prevention department. recipient: yes, what is the matter? is there an issue? caller: sir, an unauthorized transaction of forty-five thousand rupees was attempted on your debit card just now. recipient: what? i did not do any transaction! please stop it. caller: do not panic sir. to block this transaction immediately, i have sent a six-digit verification code. please share the otp immediately. recipient: wait, my bank says never share otp with anyone. caller: sir, this is the security server! if you delay, your account will be blocked today and money will be lost. read the six digits now, do not disconnect! recipient: okay, let me check the sms.","[""share the OTP"", ""account will be blocked"", ""do not disconnect""]",8,val
+CALL_00684,0,en,doctor_appointment,16.05,"CALLER: Hello, calling from Apollo Clinic regarding your consultation appointment with Dr. Rao today at 5 PM. 
+RECIPIENT: Yes, I will be reaching by 4:45 PM. 
+CALLER: Perfect. Please carry your previous blood reports and prescription card.","caller: hello, calling from apollo clinic regarding your consultation appointment with dr. rao today at 5 pm. recipient: yes, i will be reaching by 4:45 pm. caller: perfect. please carry your previous blood reports and prescription card.",[],3,val
+CALL_00692,0,en,courier_delivery,15.58,"CALLER: Hello sir, BlueDart delivery agent here. I have an Amazon package for flat number 302. 
+RECIPIENT: Yes, I am at home. Are you at the security gate? 
+CALLER: Yes sir, I am entering the building. Please be ready to collect it. No payment needed as it is prepaid.","caller: hello sir, bluedart delivery agent here. i have an amazon package for flat number 302. recipient: yes, i am at home. are you at the security gate? caller: yes sir, i am entering the building. please be ready to collect it. no payment needed as it is prepaid.",[],3,val
+CALL_00306,0,en,courier_delivery,17.41,"CALLER: Hello sir, BlueDart delivery agent here. I have an Amazon package for flat number 302. 
+RECIPIENT: Yes, I am at home. Are you at the security gate? 
+CALLER: Yes sir, I am entering the building. Please be ready to collect it. No payment needed as it is prepaid.","caller: hello sir, bluedart delivery agent here. i have an amazon package for flat number 302. recipient: yes, i am at home. are you at the security gate? caller: yes sir, i am entering the building. please be ready to collect it. no payment needed as it is prepaid.",[],3,val
+CALL_00645,1,en,remote_access_scam,26.36,"CALLER: Dear consumer, your electricity bill update is pending. Your power will be disconnected at 9:30 PM tonight. 
+RECIPIENT: I already paid my electricity bill through Google Pay yesterday! 
+CALLER: Sir, the gateway server did not sync. To update the bill and prevent power cut, install QuickSupport or AnyDesk app from Play Store. 
+RECIPIENT: Is that an official electricity department app? 
+CALLER: Yes sir, it is the government consumer gateway. Install it and tell me the nine-digit code showing on your screen.","caller: dear consumer, your electricity bill update is pending. your power will be disconnected at 9:30 pm tonight. recipient: i already paid my electricity bill through google pay yesterday! caller: sir, the gateway server did not sync. to update the bill and prevent power cut, install quicksupport or anydesk app from play store. recipient: is that an official electricity department app? caller: yes sir, it is the government consumer gateway. install it and tell me the nine-digit code showing on your screen.","[""download AnyDesk"", ""nine digit code"", ""electricity power disconnected""]",5,val
+CALL_00403,1,hi,digital_arrest,29.63,"CALLER: Yeh call Delhi Police Crime Branch se hai. Aapke Aadhaar card par illegal sim cards issue hue hain. 
+RECIPIENT: Maine koi doosra SIM card nahi liya hai officer. 
+CALLER: In numbers se extortion calls kiye gaye hain. Aapko digital arrest mein rakha gaya hai. 
+RECIPIENT: Aap kya keh rahe hain? Mujhe kya karna hoga? 
+CALLER: Aapke bank balance ki investigation hogi. Turant di gayi safe treasury account mein paise transfer karo.",caller: yeh call delhi police crime branch se hai. aapke aadhaar card par illegal sim cards issue hue hain. recipient: maine koi doosra sim card nahi liya hai officer. caller: in numbers se extortion calls kiye gaye hain. aapko digital arrest mein rakha gaya hai. recipient: aap kya keh rahe hain? mujhe kya karna hoga? caller: aapke bank balance ki investigation hogi. turant di gayi safe treasury account mein paise transfer karo.,"[""digital arrest"", ""police case"", ""secret account"", ""paise transfer karo""]",5,val
+CALL_00364,0,en,doctor_appointment,15.54,"CALLER: Hello, calling from Apollo Clinic regarding your consultation appointment with Dr. Rao today at 5 PM. 
+RECIPIENT: Yes, I will be reaching by 4:45 PM. 
+CALLER: Perfect. Please carry your previous blood reports and prescription card.","caller: hello, calling from apollo clinic regarding your consultation appointment with dr. rao today at 5 pm. recipient: yes, i will be reaching by 4:45 pm. caller: perfect. please carry your previous blood reports and prescription card.",[],3,val
+CALL_00958,0,en,customer_support,28.05,"CALLER: Good morning, this is Priya from Airtel Customer Care. I am following up on your broadband speed complaint. 
+RECIPIENT: Yes, thank you for calling. The internet has been disconnecting frequently since yesterday. 
+CALLER: I apologize for the inconvenience. Let me run a diagnostic test on your line. Is the router light solid green? 
+RECIPIENT: Yes, it is blinking green right now. 
+CALLER: Understood. I have reset the port from our end. Please restart the router after two minutes. No personal details are needed.","caller: good morning, this is priya from airtel customer care. i am following up on your broadband speed complaint. recipient: yes, thank you for calling. the internet has been disconnecting frequently since yesterday. caller: i apologize for the inconvenience. let me run a diagnostic test on your line. is the router light solid green? recipient: yes, it is blinking green right now. caller: understood. i have reset the port from our end. please restart the router after two minutes. no personal details are needed.",[],5,val
+CALL_00262,0,hi,customer_support,16.08,"CALLER: Namaste sir, main Jio customer care se bol rahi hoon. Aapka fiber connection ka request mila tha. 
+RECIPIENT: Haan, kal technician aane wale the lekin koi nahi aaya. 
+CALLER: Humein khed hai sir. Humne aaj dopahar 2 baje ka slot book kar diya hai. Technician aapse sampark karenge.","caller: namaste sir, main jio customer care se bol rahi hoon. aapka fiber connection ka request mila tha. recipient: haan, kal technician aane wale the lekin koi nahi aaya. caller: humein khed hai sir. humne aaj dopahar 2 baje ka slot book kar diya hai. technician aapse sampark karenge.",[],3,val
+CALL_00420,0,hi,delivery_confirmation,16.06,"CALLER: Bhaiya Zomato delivery boy bol raha hoon. Aapka delivery location gate par hai ya tower mein? 
+RECIPIENT: Tower B, second floor par le aaiye. 
+CALLER: Theek hai sir, main lift se upar aa raha hoon.","caller: bhaiya zomato delivery boy bol raha hoon. aapka delivery location gate par hai ya tower mein? recipient: tower b, second floor par le aaiye. caller: theek hai sir, main lift se upar aa raha hoon.",[],3,val
+CALL_00026,0,hi,delivery_confirmation,15.8,"CALLER: Bhaiya Zomato delivery boy bol raha hoon. Aapka delivery location gate par hai ya tower mein? 
+RECIPIENT: Tower B, second floor par le aaiye. 
+CALLER: Theek hai sir, main lift se upar aa raha hoon.","caller: bhaiya zomato delivery boy bol raha hoon. aapka delivery location gate par hai ya tower mein? recipient: tower b, second floor par le aaiye. caller: theek hai sir, main lift se upar aa raha hoon.",[],3,val
+CALL_00202,0,en,doctor_appointment,15.78,"CALLER: Hello, calling from Apollo Clinic regarding your consultation appointment with Dr. Rao today at 5 PM. 
+RECIPIENT: Yes, I will be reaching by 4:45 PM. 
+CALLER: Perfect. Please carry your previous blood reports and prescription card.","caller: hello, calling from apollo clinic regarding your consultation appointment with dr. rao today at 5 pm. recipient: yes, i will be reaching by 4:45 pm. caller: perfect. please carry your previous blood reports and prescription card.",[],3,val
+CALL_00771,1,en,remote_access_scam,27.4,"CALLER: Dear consumer, your electricity bill update is pending. Your power will be disconnected at 9:30 PM tonight. 
+RECIPIENT: I already paid my electricity bill through Google Pay yesterday! 
+CALLER: Sir, the gateway server did not sync. To update the bill and prevent power cut, install QuickSupport or AnyDesk app from Play Store. 
+RECIPIENT: Is that an official electricity department app? 
+CALLER: Yes sir, it is the government consumer gateway. Install it and tell me the nine-digit code showing on your screen.","caller: dear consumer, your electricity bill update is pending. your power will be disconnected at 9:30 pm tonight. recipient: i already paid my electricity bill through google pay yesterday! caller: sir, the gateway server did not sync. to update the bill and prevent power cut, install quicksupport or anydesk app from play store. recipient: is that an official electricity department app? caller: yes sir, it is the government consumer gateway. install it and tell me the nine-digit code showing on your screen.","[""download AnyDesk"", ""nine digit code"", ""electricity power disconnected""]",5,val
+CALL_00127,1,en,bank_impersonation,42.02,"CALLER: Hello sir, I am calling from State Bank of India fraud prevention department. 
+RECIPIENT: Yes, what is the matter? Is there an issue? 
+CALLER: Sir, an unauthorized transaction of forty-five thousand rupees was attempted on your debit card just now. 
+RECIPIENT: What? I did not do any transaction! Please stop it. 
+CALLER: Do not panic sir. To block this transaction immediately, I have sent a six-digit verification code. Please share the OTP immediately. 
+RECIPIENT: Wait, my bank says never share OTP with anyone. 
+CALLER: Sir, this is the security server! If you delay, your account will be blocked today and money will be lost. Read the six digits now, do not disconnect! 
+RECIPIENT: Okay, let me check the SMS.","caller: hello sir, i am calling from state bank of india fraud prevention department. recipient: yes, what is the matter? is there an issue? caller: sir, an unauthorized transaction of forty-five thousand rupees was attempted on your debit card just now. recipient: what? i did not do any transaction! please stop it. caller: do not panic sir. to block this transaction immediately, i have sent a six-digit verification code. please share the otp immediately. recipient: wait, my bank says never share otp with anyone. caller: sir, this is the security server! if you delay, your account will be blocked today and money will be lost. read the six digits now, do not disconnect! recipient: okay, let me check the sms.","[""share the OTP"", ""account will be blocked"", ""do not disconnect""]",8,val
+CALL_00622,0,en,customer_support,30.23,"CALLER: Good morning, this is Priya from Airtel Customer Care. I am following up on your broadband speed complaint. 
+RECIPIENT: Yes, thank you for calling. The internet has been disconnecting frequently since yesterday. 
+CALLER: I apologize for the inconvenience. Let me run a diagnostic test on your line. Is the router light solid green? 
+RECIPIENT: Yes, it is blinking green right now. 
+CALLER: Understood. I have reset the port from our end. Please restart the router after two minutes. No personal details are needed.","caller: good morning, this is priya from airtel customer care. i am following up on your broadband speed complaint. recipient: yes, thank you for calling. the internet has been disconnecting frequently since yesterday. caller: i apologize for the inconvenience. let me run a diagnostic test on your line. is the router light solid green? recipient: yes, it is blinking green right now. caller: understood. i have reset the port from our end. please restart the router after two minutes. no personal details are needed.",[],5,val
+CALL_00529,1,en,digital_arrest,40.6,"CALLER: This is Officer Vikram Rathore from Mumbai Cyber Crime and CBI headquarters. 
+RECIPIENT: Why are you calling me? I am a law-abiding citizen. 
+CALLER: A parcel containing five passports and synthetic narcotics was intercepted at Mumbai international airport registered under your Aadhaar number. 
+RECIPIENT: I never sent any parcel! Someone must have misused my identity. 
+CALLER: An arrest warrant has been issued against you under the Money Laundering Act. You are currently under digital arrest. 
+RECIPIENT: Digital arrest? What does that mean? How do I clear this? 
+CALLER: You must stay on this video call, do not inform family, and transfer your account funds to the Reserve Bank secret verification account immediately.","caller: this is officer vikram rathore from mumbai cyber crime and cbi headquarters. recipient: why are you calling me? i am a law-abiding citizen. caller: a parcel containing five passports and synthetic narcotics was intercepted at mumbai international airport registered under your aadhaar number. recipient: i never sent any parcel! someone must have misused my identity. caller: an arrest warrant has been issued against you under the money laundering act. you are currently under digital arrest. recipient: digital arrest? what does that mean? how do i clear this? caller: you must stay on this video call, do not inform family, and transfer your account funds to the reserve bank secret verification account immediately.","[""digital arrest"", ""CBI headquarters"", ""illegal parcel"", ""passport seized""]",7,val
+CALL_00691,1,en,remote_access_scam,28.17,"CALLER: Dear consumer, your electricity bill update is pending. Your power will be disconnected at 9:30 PM tonight. 
+RECIPIENT: I already paid my electricity bill through Google Pay yesterday! 
+CALLER: Sir, the gateway server did not sync. To update the bill and prevent power cut, install QuickSupport or AnyDesk app from Play Store. 
+RECIPIENT: Is that an official electricity department app? 
+CALLER: Yes sir, it is the government consumer gateway. Install it and tell me the nine-digit code showing on your screen.","caller: dear consumer, your electricity bill update is pending. your power will be disconnected at 9:30 pm tonight. recipient: i already paid my electricity bill through google pay yesterday! caller: sir, the gateway server did not sync. to update the bill and prevent power cut, install quicksupport or anydesk app from play store. recipient: is that an official electricity department app? caller: yes sir, it is the government consumer gateway. install it and tell me the nine-digit code showing on your screen.","[""download AnyDesk"", ""nine digit code"", ""electricity power disconnected""]",5,val
+CALL_00906,0,hi,customer_support,18.64,"CALLER: Namaste sir, main Jio customer care se bol rahi hoon. Aapka fiber connection ka request mila tha. 
+RECIPIENT: Haan, kal technician aane wale the lekin koi nahi aaya. 
+CALLER: Humein khed hai sir. Humne aaj dopahar 2 baje ka slot book kar diya hai. Technician aapse sampark karenge.","caller: namaste sir, main jio customer care se bol rahi hoon. aapka fiber connection ka request mila tha. recipient: haan, kal technician aane wale the lekin koi nahi aaya. caller: humein khed hai sir. humne aaj dopahar 2 baje ka slot book kar diya hai. technician aapse sampark karenge.",[],3,val
+CALL_00818,0,en,doctor_appointment,15.28,"CALLER: Hello, calling from Apollo Clinic regarding your consultation appointment with Dr. Rao today at 5 PM. 
+RECIPIENT: Yes, I will be reaching by 4:45 PM. 
+CALLER: Perfect. Please carry your previous blood reports and prescription card.","caller: hello, calling from apollo clinic regarding your consultation appointment with dr. rao today at 5 pm. recipient: yes, i will be reaching by 4:45 pm. caller: perfect. please carry your previous blood reports and prescription card.",[],3,val
+CALL_00614,0,hi,delivery_confirmation,16.65,"CALLER: Bhaiya Zomato delivery boy bol raha hoon. Aapka delivery location gate par hai ya tower mein? 
+RECIPIENT: Tower B, second floor par le aaiye. 
+CALLER: Theek hai sir, main lift se upar aa raha hoon.","caller: bhaiya zomato delivery boy bol raha hoon. aapka delivery location gate par hai ya tower mein? recipient: tower b, second floor par le aaiye. caller: theek hai sir, main lift se upar aa raha hoon.",[],3,val
+CALL_00720,0,hi,customer_support,16.23,"CALLER: Namaste sir, main Jio customer care se bol rahi hoon. Aapka fiber connection ka request mila tha. 
+RECIPIENT: Haan, kal technician aane wale the lekin koi nahi aaya. 
+CALLER: Humein khed hai sir. Humne aaj dopahar 2 baje ka slot book kar diya hai. Technician aapse sampark karenge.","caller: namaste sir, main jio customer care se bol rahi hoon. aapka fiber connection ka request mila tha. recipient: haan, kal technician aane wale the lekin koi nahi aaya. caller: humein khed hai sir. humne aaj dopahar 2 baje ka slot book kar diya hai. technician aapse sampark karenge.",[],3,val
+CALL_00147,1,hi,bank_impersonation,37.67,"CALLER: Namaskar sir, main Bank of Baroda ke verification desk se baat kar raha hoon. 
+RECIPIENT: Haan boliye, kya baat hai? 
+CALLER: Sir aapka KYC update pending hai, aur agar aaj verify nahi hua toh aapka account freeze ho jayega. 
+RECIPIENT: Lekin maine pichle mahine hi branch jaakar form bhara tha. 
+CALLER: Sir branch update reject ho gaya tha. Abhi aapke mobile par 6 digit ka OTP aayega, turant verify karein. 
+RECIPIENT: OTP toh kisi ke saath share karne se mana karte hain na? 
+CALLER: Sir main bank system se hoon, koi personal number nahi hai. OTP share karo warna saare transactions ruk jayenge.","caller: namaskar sir, main bank of baroda ke verification desk se baat kar raha hoon. recipient: haan boliye, kya baat hai? caller: sir aapka kyc update pending hai, aur agar aaj verify nahi hua toh aapka account freeze ho jayega. recipient: lekin maine pichle mahine hi branch jaakar form bhara tha. caller: sir branch update reject ho gaya tha. abhi aapke mobile par 6 digit ka otp aayega, turant verify karein. recipient: otp toh kisi ke saath share karne se mana karte hain na? caller: sir main bank system se hoon, koi personal number nahi hai. otp share karo warna saare transactions ruk jayenge.","[""OTP share karo"", ""account freeze ho jayega"", ""turant verify karein""]",7,val
+CALL_00814,0,hi,customer_support,17.85,"CALLER: Namaste sir, main Jio customer care se bol rahi hoon. Aapka fiber connection ka request mila tha. 
+RECIPIENT: Haan, kal technician aane wale the lekin koi nahi aaya. 
+CALLER: Humein khed hai sir. Humne aaj dopahar 2 baje ka slot book kar diya hai. Technician aapse sampark karenge.","caller: namaste sir, main jio customer care se bol rahi hoon. aapka fiber connection ka request mila tha. recipient: haan, kal technician aane wale the lekin koi nahi aaya. caller: humein khed hai sir. humne aaj dopahar 2 baje ka slot book kar diya hai. technician aapse sampark karenge.",[],3,val
+CALL_00274,0,en,courier_delivery,18.49,"CALLER: Hello sir, BlueDart delivery agent here. I have an Amazon package for flat number 302. 
+RECIPIENT: Yes, I am at home. Are you at the security gate? 
+CALLER: Yes sir, I am entering the building. Please be ready to collect it. No payment needed as it is prepaid.","caller: hello sir, bluedart delivery agent here. i have an amazon package for flat number 302. recipient: yes, i am at home. are you at the security gate? caller: yes sir, i am entering the building. please be ready to collect it. no payment needed as it is prepaid.",[],3,val
+CALL_00521,1,en,remote_access_scam,29.38,"CALLER: Dear consumer, your electricity bill update is pending. Your power will be disconnected at 9:30 PM tonight. 
+RECIPIENT: I already paid my electricity bill through Google Pay yesterday! 
+CALLER: Sir, the gateway server did not sync. To update the bill and prevent power cut, install QuickSupport or AnyDesk app from Play Store. 
+RECIPIENT: Is that an official electricity department app? 
+CALLER: Yes sir, it is the government consumer gateway. Install it and tell me the nine-digit code showing on your screen.","caller: dear consumer, your electricity bill update is pending. your power will be disconnected at 9:30 pm tonight. recipient: i already paid my electricity bill through google pay yesterday! caller: sir, the gateway server did not sync. to update the bill and prevent power cut, install quicksupport or anydesk app from play store. recipient: is that an official electricity department app? caller: yes sir, it is the government consumer gateway. install it and tell me the nine-digit code showing on your screen.","[""download AnyDesk"", ""nine digit code"", ""electricity power disconnected""]",5,val
+CALL_00509,1,hi,digital_arrest,28.21,"CALLER: Yeh call Delhi Police Crime Branch se hai. Aapke Aadhaar card par illegal sim cards issue hue hain. 
+RECIPIENT: Maine koi doosra SIM card nahi liya hai officer. 
+CALLER: In numbers se extortion calls kiye gaye hain. Aapko digital arrest mein rakha gaya hai. 
+RECIPIENT: Aap kya keh rahe hain? Mujhe kya karna hoga? 
+CALLER: Aapke bank balance ki investigation hogi. Turant di gayi safe treasury account mein paise transfer karo.",caller: yeh call delhi police crime branch se hai. aapke aadhaar card par illegal sim cards issue hue hain. recipient: maine koi doosra sim card nahi liya hai officer. caller: in numbers se extortion calls kiye gaye hain. aapko digital arrest mein rakha gaya hai. recipient: aap kya keh rahe hain? mujhe kya karna hoga? caller: aapke bank balance ki investigation hogi. turant di gayi safe treasury account mein paise transfer karo.,"[""digital arrest"", ""police case"", ""secret account"", ""paise transfer karo""]",5,val
+CALL_00456,0,en,courier_delivery,14.58,"CALLER: Hello sir, BlueDart delivery agent here. I have an Amazon package for flat number 302. 
+RECIPIENT: Yes, I am at home. Are you at the security gate? 
+CALLER: Yes sir, I am entering the building. Please be ready to collect it. No payment needed as it is prepaid.","caller: hello sir, bluedart delivery agent here. i have an amazon package for flat number 302. recipient: yes, i am at home. are you at the security gate? caller: yes sir, i am entering the building. please be ready to collect it. no payment needed as it is prepaid.",[],3,val
+CALL_00517,1,hi,digital_arrest,25.23,"CALLER: Yeh call Delhi Police Crime Branch se hai. Aapke Aadhaar card par illegal sim cards issue hue hain. 
+RECIPIENT: Maine koi doosra SIM card nahi liya hai officer. 
+CALLER: In numbers se extortion calls kiye gaye hain. Aapko digital arrest mein rakha gaya hai. 
+RECIPIENT: Aap kya keh rahe hain? Mujhe kya karna hoga? 
+CALLER: Aapke bank balance ki investigation hogi. Turant di gayi safe treasury account mein paise transfer karo.",caller: yeh call delhi police crime branch se hai. aapke aadhaar card par illegal sim cards issue hue hain. recipient: maine koi doosra sim card nahi liya hai officer. caller: in numbers se extortion calls kiye gaye hain. aapko digital arrest mein rakha gaya hai. recipient: aap kya keh rahe hain? mujhe kya karna hoga? caller: aapke bank balance ki investigation hogi. turant di gayi safe treasury account mein paise transfer karo.,"[""digital arrest"", ""police case"", ""secret account"", ""paise transfer karo""]",5,val
+CALL_00928,0,te,customer_support,18.32,"CALLER: Namaskaram andi, nenu ACT Fibernet nundi call chestunnanu. Mee internet complaint resolve ayyinda andi? 
+RECIPIENT: Avunu andi, technician vachi wire change chesaru, ippudu bagane vastondi. 
+CALLER: Chala santhosham andi. Service feedback kosam message vastundi, rating ivvandi.","caller: namaskaram andi, nenu act fibernet nundi call chestunnanu. mee internet complaint resolve ayyinda andi? recipient: avunu andi, technician vachi wire change chesaru, ippudu bagane vastondi. caller: chala santhosham andi. service feedback kosam message vastundi, rating ivvandi.",[],3,val
+CALL_00046,0,en,customer_support,28.76,"CALLER: Good morning, this is Priya from Airtel Customer Care. I am following up on your broadband speed complaint. 
+RECIPIENT: Yes, thank you for calling. The internet has been disconnecting frequently since yesterday. 
+CALLER: I apologize for the inconvenience. Let me run a diagnostic test on your line. Is the router light solid green? 
+RECIPIENT: Yes, it is blinking green right now. 
+CALLER: Understood. I have reset the port from our end. Please restart the router after two minutes. No personal details are needed.","caller: good morning, this is priya from airtel customer care. i am following up on your broadband speed complaint. recipient: yes, thank you for calling. the internet has been disconnecting frequently since yesterday. caller: i apologize for the inconvenience. let me run a diagnostic test on your line. is the router light solid green? recipient: yes, it is blinking green right now. caller: understood. i have reset the port from our end. please restart the router after two minutes. no personal details are needed.",[],5,val
+CALL_00918,0,hi,customer_support,16.2,"CALLER: Namaste sir, main Jio customer care se bol rahi hoon. Aapka fiber connection ka request mila tha. 
+RECIPIENT: Haan, kal technician aane wale the lekin koi nahi aaya. 
+CALLER: Humein khed hai sir. Humne aaj dopahar 2 baje ka slot book kar diya hai. Technician aapse sampark karenge.","caller: namaste sir, main jio customer care se bol rahi hoon. aapka fiber connection ka request mila tha. recipient: haan, kal technician aane wale the lekin koi nahi aaya. caller: humein khed hai sir. humne aaj dopahar 2 baje ka slot book kar diya hai. technician aapse sampark karenge.",[],3,val
+CALL_00501,1,en,digital_arrest,41.05,"CALLER: This is Officer Vikram Rathore from Mumbai Cyber Crime and CBI headquarters. 
+RECIPIENT: Why are you calling me? I am a law-abiding citizen. 
+CALLER: A parcel containing five passports and synthetic narcotics was intercepted at Mumbai international airport registered under your Aadhaar number. 
+RECIPIENT: I never sent any parcel! Someone must have misused my identity. 
+CALLER: An arrest warrant has been issued against you under the Money Laundering Act. You are currently under digital arrest. 
+RECIPIENT: Digital arrest? What does that mean? How do I clear this? 
+CALLER: You must stay on this video call, do not inform family, and transfer your account funds to the Reserve Bank secret verification account immediately.","caller: this is officer vikram rathore from mumbai cyber crime and cbi headquarters. recipient: why are you calling me? i am a law-abiding citizen. caller: a parcel containing five passports and synthetic narcotics was intercepted at mumbai international airport registered under your aadhaar number. recipient: i never sent any parcel! someone must have misused my identity. caller: an arrest warrant has been issued against you under the money laundering act. you are currently under digital arrest. recipient: digital arrest? what does that mean? how do i clear this? caller: you must stay on this video call, do not inform family, and transfer your account funds to the reserve bank secret verification account immediately.","[""digital arrest"", ""CBI headquarters"", ""illegal parcel"", ""passport seized""]",7,val
+CALL_00443,1,hi,bank_impersonation,40.83,"CALLER: Namaskar sir, main Bank of Baroda ke verification desk se baat kar raha hoon. 
+RECIPIENT: Haan boliye, kya baat hai? 
+CALLER: Sir aapka KYC update pending hai, aur agar aaj verify nahi hua toh aapka account freeze ho jayega. 
+RECIPIENT: Lekin maine pichle mahine hi branch jaakar form bhara tha. 
+CALLER: Sir branch update reject ho gaya tha. Abhi aapke mobile par 6 digit ka OTP aayega, turant verify karein. 
+RECIPIENT: OTP toh kisi ke saath share karne se mana karte hain na? 
+CALLER: Sir main bank system se hoon, koi personal number nahi hai. OTP share karo warna saare transactions ruk jayenge.","caller: namaskar sir, main bank of baroda ke verification desk se baat kar raha hoon. recipient: haan boliye, kya baat hai? caller: sir aapka kyc update pending hai, aur agar aaj verify nahi hua toh aapka account freeze ho jayega. recipient: lekin maine pichle mahine hi branch jaakar form bhara tha. caller: sir branch update reject ho gaya tha. abhi aapke mobile par 6 digit ka otp aayega, turant verify karein. recipient: otp toh kisi ke saath share karne se mana karte hain na? caller: sir main bank system se hoon, koi personal number nahi hai. otp share karo warna saare transactions ruk jayenge.","[""OTP share karo"", ""account freeze ho jayega"", ""turant verify karein""]",7,val
+CALL_00415,1,en,remote_access_scam,27.25,"CALLER: Dear consumer, your electricity bill update is pending. Your power will be disconnected at 9:30 PM tonight. 
+RECIPIENT: I already paid my electricity bill through Google Pay yesterday! 
+CALLER: Sir, the gateway server did not sync. To update the bill and prevent power cut, install QuickSupport or AnyDesk app from Play Store. 
+RECIPIENT: Is that an official electricity department app? 
+CALLER: Yes sir, it is the government consumer gateway. Install it and tell me the nine-digit code showing on your screen.","caller: dear consumer, your electricity bill update is pending. your power will be disconnected at 9:30 pm tonight. recipient: i already paid my electricity bill through google pay yesterday! caller: sir, the gateway server did not sync. to update the bill and prevent power cut, install quicksupport or anydesk app from play store. recipient: is that an official electricity department app? caller: yes sir, it is the government consumer gateway. install it and tell me the nine-digit code showing on your screen.","[""download AnyDesk"", ""nine digit code"", ""electricity power disconnected""]",5,val
+CALL_00041,1,en,bank_impersonation,44.72,"CALLER: Hello sir, I am calling from State Bank of India fraud prevention department. 
+RECIPIENT: Yes, what is the matter? Is there an issue? 
+CALLER: Sir, an unauthorized transaction of forty-five thousand rupees was attempted on your debit card just now. 
+RECIPIENT: What? I did not do any transaction! Please stop it. 
+CALLER: Do not panic sir. To block this transaction immediately, I have sent a six-digit verification code. Please share the OTP immediately. 
+RECIPIENT: Wait, my bank says never share OTP with anyone. 
+CALLER: Sir, this is the security server! If you delay, your account will be blocked today and money will be lost. Read the six digits now, do not disconnect! 
+RECIPIENT: Okay, let me check the SMS.","caller: hello sir, i am calling from state bank of india fraud prevention department. recipient: yes, what is the matter? is there an issue? caller: sir, an unauthorized transaction of forty-five thousand rupees was attempted on your debit card just now. recipient: what? i did not do any transaction! please stop it. caller: do not panic sir. to block this transaction immediately, i have sent a six-digit verification code. please share the otp immediately. recipient: wait, my bank says never share otp with anyone. caller: sir, this is the security server! if you delay, your account will be blocked today and money will be lost. read the six digits now, do not disconnect! recipient: okay, let me check the sms.","[""share the OTP"", ""account will be blocked"", ""do not disconnect""]",8,val
+CALL_00486,0,hi,delivery_confirmation,16.74,"CALLER: Bhaiya Zomato delivery boy bol raha hoon. Aapka delivery location gate par hai ya tower mein? 
+RECIPIENT: Tower B, second floor par le aaiye. 
+CALLER: Theek hai sir, main lift se upar aa raha hoon.","caller: bhaiya zomato delivery boy bol raha hoon. aapka delivery location gate par hai ya tower mein? recipient: tower b, second floor par le aaiye. caller: theek hai sir, main lift se upar aa raha hoon.",[],3,val
+CALL_00543,1,hi,bank_impersonation,37.7,"CALLER: Namaskar sir, main Bank of Baroda ke verification desk se baat kar raha hoon. 
+RECIPIENT: Haan boliye, kya baat hai? 
+CALLER: Sir aapka KYC update pending hai, aur agar aaj verify nahi hua toh aapka account freeze ho jayega. 
+RECIPIENT: Lekin maine pichle mahine hi branch jaakar form bhara tha. 
+CALLER: Sir branch update reject ho gaya tha. Abhi aapke mobile par 6 digit ka OTP aayega, turant verify karein. 
+RECIPIENT: OTP toh kisi ke saath share karne se mana karte hain na? 
+CALLER: Sir main bank system se hoon, koi personal number nahi hai. OTP share karo warna saare transactions ruk jayenge.","caller: namaskar sir, main bank of baroda ke verification desk se baat kar raha hoon. recipient: haan boliye, kya baat hai? caller: sir aapka kyc update pending hai, aur agar aaj verify nahi hua toh aapka account freeze ho jayega. recipient: lekin maine pichle mahine hi branch jaakar form bhara tha. caller: sir branch update reject ho gaya tha. abhi aapke mobile par 6 digit ka otp aayega, turant verify karein. recipient: otp toh kisi ke saath share karne se mana karte hain na? caller: sir main bank system se hoon, koi personal number nahi hai. otp share karo warna saare transactions ruk jayenge.","[""OTP share karo"", ""account freeze ho jayega"", ""turant verify karein""]",7,val
+CALL_00216,0,en,courier_delivery,17.35,"CALLER: Hello sir, BlueDart delivery agent here. I have an Amazon package for flat number 302. 
+RECIPIENT: Yes, I am at home. Are you at the security gate? 
+CALLER: Yes sir, I am entering the building. Please be ready to collect it. No payment needed as it is prepaid.","caller: hello sir, bluedart delivery agent here. i have an amazon package for flat number 302. recipient: yes, i am at home. are you at the security gate? caller: yes sir, i am entering the building. please be ready to collect it. no payment needed as it is prepaid.",[],3,val
+CALL_00080,0,en,courier_delivery,16.24,"CALLER: Hello sir, BlueDart delivery agent here. I have an Amazon package for flat number 302. 
+RECIPIENT: Yes, I am at home. Are you at the security gate? 
+CALLER: Yes sir, I am entering the building. Please be ready to collect it. No payment needed as it is prepaid.","caller: hello sir, bluedart delivery agent here. i have an amazon package for flat number 302. recipient: yes, i am at home. are you at the security gate? caller: yes sir, i am entering the building. please be ready to collect it. no payment needed as it is prepaid.",[],3,val
+CALL_00356,0,te,customer_support,14.16,"CALLER: Namaskaram andi, nenu ACT Fibernet nundi call chestunnanu. Mee internet complaint resolve ayyinda andi? 
+RECIPIENT: Avunu andi, technician vachi wire change chesaru, ippudu bagane vastondi. 
+CALLER: Chala santhosham andi. Service feedback kosam message vastundi, rating ivvandi.","caller: namaskaram andi, nenu act fibernet nundi call chestunnanu. mee internet complaint resolve ayyinda andi? recipient: avunu andi, technician vachi wire change chesaru, ippudu bagane vastondi. caller: chala santhosham andi. service feedback kosam message vastundi, rating ivvandi.",[],3,val
+CALL_00411,1,hi,bank_impersonation,37.59,"CALLER: Namaskar sir, main Bank of Baroda ke verification desk se baat kar raha hoon. 
+RECIPIENT: Haan boliye, kya baat hai? 
+CALLER: Sir aapka KYC update pending hai, aur agar aaj verify nahi hua toh aapka account freeze ho jayega. 
+RECIPIENT: Lekin maine pichle mahine hi branch jaakar form bhara tha. 
+CALLER: Sir branch update reject ho gaya tha. Abhi aapke mobile par 6 digit ka OTP aayega, turant verify karein. 
+RECIPIENT: OTP toh kisi ke saath share karne se mana karte hain na? 
+CALLER: Sir main bank system se hoon, koi personal number nahi hai. OTP share karo warna saare transactions ruk jayenge.","caller: namaskar sir, main bank of baroda ke verification desk se baat kar raha hoon. recipient: haan boliye, kya baat hai? caller: sir aapka kyc update pending hai, aur agar aaj verify nahi hua toh aapka account freeze ho jayega. recipient: lekin maine pichle mahine hi branch jaakar form bhara tha. caller: sir branch update reject ho gaya tha. abhi aapke mobile par 6 digit ka otp aayega, turant verify karein. recipient: otp toh kisi ke saath share karne se mana karte hain na? caller: sir main bank system se hoon, koi personal number nahi hai. otp share karo warna saare transactions ruk jayenge.","[""OTP share karo"", ""account freeze ho jayega"", ""turant verify karein""]",7,val
+CALL_00093,1,en,bank_impersonation,45.52,"CALLER: Hello sir, I am calling from State Bank of India fraud prevention department. 
+RECIPIENT: Yes, what is the matter? Is there an issue? 
+CALLER: Sir, an unauthorized transaction of forty-five thousand rupees was attempted on your debit card just now. 
+RECIPIENT: What? I did not do any transaction! Please stop it. 
+CALLER: Do not panic sir. To block this transaction immediately, I have sent a six-digit verification code. Please share the OTP immediately. 
+RECIPIENT: Wait, my bank says never share OTP with anyone. 
+CALLER: Sir, this is the security server! If you delay, your account will be blocked today and money will be lost. Read the six digits now, do not disconnect! 
+RECIPIENT: Okay, let me check the SMS.","caller: hello sir, i am calling from state bank of india fraud prevention department. recipient: yes, what is the matter? is there an issue? caller: sir, an unauthorized transaction of forty-five thousand rupees was attempted on your debit card just now. recipient: what? i did not do any transaction! please stop it. caller: do not panic sir. to block this transaction immediately, i have sent a six-digit verification code. please share the otp immediately. recipient: wait, my bank says never share otp with anyone. caller: sir, this is the security server! if you delay, your account will be blocked today and money will be lost. read the six digits now, do not disconnect! recipient: okay, let me check the sms.","[""share the OTP"", ""account will be blocked"", ""do not disconnect""]",8,val
+CALL_00820,0,hi,customer_support,18.11,"CALLER: Namaste sir, main Jio customer care se bol rahi hoon. Aapka fiber connection ka request mila tha. 
+RECIPIENT: Haan, kal technician aane wale the lekin koi nahi aaya. 
+CALLER: Humein khed hai sir. Humne aaj dopahar 2 baje ka slot book kar diya hai. Technician aapse sampark karenge.","caller: namaste sir, main jio customer care se bol rahi hoon. aapka fiber connection ka request mila tha. recipient: haan, kal technician aane wale the lekin koi nahi aaya. caller: humein khed hai sir. humne aaj dopahar 2 baje ka slot book kar diya hai. technician aapse sampark karenge.",[],3,val
+CALL_00525,1,en,remote_access_scam,27.0,"CALLER: Dear consumer, your electricity bill update is pending. Your power will be disconnected at 9:30 PM tonight. 
+RECIPIENT: I already paid my electricity bill through Google Pay yesterday! 
+CALLER: Sir, the gateway server did not sync. To update the bill and prevent power cut, install QuickSupport or AnyDesk app from Play Store. 
+RECIPIENT: Is that an official electricity department app? 
+CALLER: Yes sir, it is the government consumer gateway. Install it and tell me the nine-digit code showing on your screen.","caller: dear consumer, your electricity bill update is pending. your power will be disconnected at 9:30 pm tonight. recipient: i already paid my electricity bill through google pay yesterday! caller: sir, the gateway server did not sync. to update the bill and prevent power cut, install quicksupport or anydesk app from play store. recipient: is that an official electricity department app? caller: yes sir, it is the government consumer gateway. install it and tell me the nine-digit code showing on your screen.","[""download AnyDesk"", ""nine digit code"", ""electricity power disconnected""]",5,val
+CALL_00616,0,te,customer_support,17.72,"CALLER: Namaskaram andi, nenu ACT Fibernet nundi call chestunnanu. Mee internet complaint resolve ayyinda andi? 
+RECIPIENT: Avunu andi, technician vachi wire change chesaru, ippudu bagane vastondi. 
+CALLER: Chala santhosham andi. Service feedback kosam message vastundi, rating ivvandi.","caller: namaskaram andi, nenu act fibernet nundi call chestunnanu. mee internet complaint resolve ayyinda andi? recipient: avunu andi, technician vachi wire change chesaru, ippudu bagane vastondi. caller: chala santhosham andi. service feedback kosam message vastundi, rating ivvandi.",[],3,val
+CALL_00178,0,te,hospital_appointment,16.28,"CALLER: Namaskaram, KIMS Hospital reception nundi call andi. Repu mee doctor appointment re-scheduled ayyindi. 
+RECIPIENT: E time ki change chesaru andi? 
+CALLER: Repu udayam 11 gantalaki doctor garu untaru andi.","caller: namaskaram, kims hospital reception nundi call andi. repu mee doctor appointment re-scheduled ayyindi. recipient: e time ki change chesaru andi? caller: repu udayam 11 gantalaki doctor garu untaru andi.",[],3,val
+CALL_00008,0,hi,customer_support,16.9,"CALLER: Namaste sir, main Jio customer care se bol rahi hoon. Aapka fiber connection ka request mila tha. 
+RECIPIENT: Haan, kal technician aane wale the lekin koi nahi aaya. 
+CALLER: Humein khed hai sir. Humne aaj dopahar 2 baje ka slot book kar diya hai. Technician aapse sampark karenge.","caller: namaste sir, main jio customer care se bol rahi hoon. aapka fiber connection ka request mila tha. recipient: haan, kal technician aane wale the lekin koi nahi aaya. caller: humein khed hai sir. humne aaj dopahar 2 baje ka slot book kar diya hai. technician aapse sampark karenge.",[],3,val
+CALL_00603,1,en,remote_access_scam,23.89,"CALLER: Dear consumer, your electricity bill update is pending. Your power will be disconnected at 9:30 PM tonight. 
+RECIPIENT: I already paid my electricity bill through Google Pay yesterday! 
+CALLER: Sir, the gateway server did not sync. To update the bill and prevent power cut, install QuickSupport or AnyDesk app from Play Store. 
+RECIPIENT: Is that an official electricity department app? 
+CALLER: Yes sir, it is the government consumer gateway. Install it and tell me the nine-digit code showing on your screen.","caller: dear consumer, your electricity bill update is pending. your power will be disconnected at 9:30 pm tonight. recipient: i already paid my electricity bill through google pay yesterday! caller: sir, the gateway server did not sync. to update the bill and prevent power cut, install quicksupport or anydesk app from play store. recipient: is that an official electricity department app? caller: yes sir, it is the government consumer gateway. install it and tell me the nine-digit code showing on your screen.","[""download AnyDesk"", ""nine digit code"", ""electricity power disconnected""]",5,val
+CALL_00315,1,en,remote_access_scam,28.53,"CALLER: Dear consumer, your electricity bill update is pending. Your power will be disconnected at 9:30 PM tonight. 
+RECIPIENT: I already paid my electricity bill through Google Pay yesterday! 
+CALLER: Sir, the gateway server did not sync. To update the bill and prevent power cut, install QuickSupport or AnyDesk app from Play Store. 
+RECIPIENT: Is that an official electricity department app? 
+CALLER: Yes sir, it is the government consumer gateway. Install it and tell me the nine-digit code showing on your screen.","caller: dear consumer, your electricity bill update is pending. your power will be disconnected at 9:30 pm tonight. recipient: i already paid my electricity bill through google pay yesterday! caller: sir, the gateway server did not sync. to update the bill and prevent power cut, install quicksupport or anydesk app from play store. recipient: is that an official electricity department app? caller: yes sir, it is the government consumer gateway. install it and tell me the nine-digit code showing on your screen.","[""download AnyDesk"", ""nine digit code"", ""electricity power disconnected""]",5,val
+CALL_00514,0,en,courier_delivery,17.05,"CALLER: Hello sir, BlueDart delivery agent here. I have an Amazon package for flat number 302. 
+RECIPIENT: Yes, I am at home. Are you at the security gate? 
+CALLER: Yes sir, I am entering the building. Please be ready to collect it. No payment needed as it is prepaid.","caller: hello sir, bluedart delivery agent here. i have an amazon package for flat number 302. recipient: yes, i am at home. are you at the security gate? caller: yes sir, i am entering the building. please be ready to collect it. no payment needed as it is prepaid.",[],3,val
+CALL_00774,0,hi,customer_support,16.79,"CALLER: Namaste sir, main Jio customer care se bol rahi hoon. Aapka fiber connection ka request mila tha. 
+RECIPIENT: Haan, kal technician aane wale the lekin koi nahi aaya. 
+CALLER: Humein khed hai sir. Humne aaj dopahar 2 baje ka slot book kar diya hai. Technician aapse sampark karenge.","caller: namaste sir, main jio customer care se bol rahi hoon. aapka fiber connection ka request mila tha. recipient: haan, kal technician aane wale the lekin koi nahi aaya. caller: humein khed hai sir. humne aaj dopahar 2 baje ka slot book kar diya hai. technician aapse sampark karenge.",[],3,val
+CALL_00430,0,en,doctor_appointment,16.72,"CALLER: Hello, calling from Apollo Clinic regarding your consultation appointment with Dr. Rao today at 5 PM. 
+RECIPIENT: Yes, I will be reaching by 4:45 PM. 
+CALLER: Perfect. Please carry your previous blood reports and prescription card.","caller: hello, calling from apollo clinic regarding your consultation appointment with dr. rao today at 5 pm. recipient: yes, i will be reaching by 4:45 pm. caller: perfect. please carry your previous blood reports and prescription card.",[],3,val
+CALL_00472,0,hi,delivery_confirmation,18.89,"CALLER: Bhaiya Zomato delivery boy bol raha hoon. Aapka delivery location gate par hai ya tower mein? 
+RECIPIENT: Tower B, second floor par le aaiye. 
+CALLER: Theek hai sir, main lift se upar aa raha hoon.","caller: bhaiya zomato delivery boy bol raha hoon. aapka delivery location gate par hai ya tower mein? recipient: tower b, second floor par le aaiye. caller: theek hai sir, main lift se upar aa raha hoon.",[],3,val
+CALL_00909,1,te,bank_impersonation,42.44,"CALLER: Namaskaram andi, nenu State Bank of India main branch nundi call chestunnanu. 
+RECIPIENT: Cheppandi sir, em vishayam? 
+CALLER: Mee account lo suspicious transaction jarigindi andi. Ventane verify cheyyali lekapothe account block avtundi. 
+RECIPIENT: Ayyo, nenu em transaction cheyyaledu andi! 
+CALLER: Bhapadakandi sir. Mee mobile ki vachina 6 digit OTP cheppandi, nenu cancel chestanu. 
+RECIPIENT: OTP evvariki cheppoddu ani bank message vachindi kada sir? 
+CALLER: Idhi security cancellation kosame sir. Ventane OTP cheppandi, time ledu.","caller: namaskaram andi, nenu state bank of india main branch nundi call chestunnanu. recipient: cheppandi sir, em vishayam? caller: mee account lo suspicious transaction jarigindi andi. ventane verify cheyyali lekapothe account block avtundi. recipient: ayyo, nenu em transaction cheyyaledu andi! caller: bhapadakandi sir. mee mobile ki vachina 6 digit otp cheppandi, nenu cancel chestanu. recipient: otp evvariki cheppoddu ani bank message vachindi kada sir? caller: idhi security cancellation kosame sir. ventane otp cheppandi, time ledu.","[""OTP cheppandi"", ""account block avtundi"", ""ventane verify cheyyali""]",7,val
+CALL_00275,1,hi,digital_arrest,28.93,"CALLER: Yeh call Delhi Police Crime Branch se hai. Aapke Aadhaar card par illegal sim cards issue hue hain. 
+RECIPIENT: Maine koi doosra SIM card nahi liya hai officer. 
+CALLER: In numbers se extortion calls kiye gaye hain. Aapko digital arrest mein rakha gaya hai. 
+RECIPIENT: Aap kya keh rahe hain? Mujhe kya karna hoga? 
+CALLER: Aapke bank balance ki investigation hogi. Turant di gayi safe treasury account mein paise transfer karo.",caller: yeh call delhi police crime branch se hai. aapke aadhaar card par illegal sim cards issue hue hain. recipient: maine koi doosra sim card nahi liya hai officer. caller: in numbers se extortion calls kiye gaye hain. aapko digital arrest mein rakha gaya hai. recipient: aap kya keh rahe hain? mujhe kya karna hoga? caller: aapke bank balance ki investigation hogi. turant di gayi safe treasury account mein paise transfer karo.,"[""digital arrest"", ""police case"", ""secret account"", ""paise transfer karo""]",5,val
+CALL_00383,1,en,digital_arrest,39.32,"CALLER: This is Officer Vikram Rathore from Mumbai Cyber Crime and CBI headquarters. 
+RECIPIENT: Why are you calling me? I am a law-abiding citizen. 
+CALLER: A parcel containing five passports and synthetic narcotics was intercepted at Mumbai international airport registered under your Aadhaar number. 
+RECIPIENT: I never sent any parcel! Someone must have misused my identity. 
+CALLER: An arrest warrant has been issued against you under the Money Laundering Act. You are currently under digital arrest. 
+RECIPIENT: Digital arrest? What does that mean? How do I clear this? 
+CALLER: You must stay on this video call, do not inform family, and transfer your account funds to the Reserve Bank secret verification account immediately.","caller: this is officer vikram rathore from mumbai cyber crime and cbi headquarters. recipient: why are you calling me? i am a law-abiding citizen. caller: a parcel containing five passports and synthetic narcotics was intercepted at mumbai international airport registered under your aadhaar number. recipient: i never sent any parcel! someone must have misused my identity. caller: an arrest warrant has been issued against you under the money laundering act. you are currently under digital arrest. recipient: digital arrest? what does that mean? how do i clear this? caller: you must stay on this video call, do not inform family, and transfer your account funds to the reserve bank secret verification account immediately.","[""digital arrest"", ""CBI headquarters"", ""illegal parcel"", ""passport seized""]",7,val
+CALL_00536,0,hi,customer_support,18.88,"CALLER: Namaste sir, main Jio customer care se bol rahi hoon. Aapka fiber connection ka request mila tha. 
+RECIPIENT: Haan, kal technician aane wale the lekin koi nahi aaya. 
+CALLER: Humein khed hai sir. Humne aaj dopahar 2 baje ka slot book kar diya hai. Technician aapse sampark karenge.","caller: namaste sir, main jio customer care se bol rahi hoon. aapka fiber connection ka request mila tha. recipient: haan, kal technician aane wale the lekin koi nahi aaya. caller: humein khed hai sir. humne aaj dopahar 2 baje ka slot book kar diya hai. technician aapse sampark karenge.",[],3,val
+CALL_00970,0,en,doctor_appointment,16.07,"CALLER: Hello, calling from Apollo Clinic regarding your consultation appointment with Dr. Rao today at 5 PM. 
+RECIPIENT: Yes, I will be reaching by 4:45 PM. 
+CALLER: Perfect. Please carry your previous blood reports and prescription card.","caller: hello, calling from apollo clinic regarding your consultation appointment with dr. rao today at 5 pm. recipient: yes, i will be reaching by 4:45 pm. caller: perfect. please carry your previous blood reports and prescription card.",[],3,val
+CALL_00342,0,hi,customer_support,15.67,"CALLER: Namaste sir, main Jio customer care se bol rahi hoon. Aapka fiber connection ka request mila tha. 
+RECIPIENT: Haan, kal technician aane wale the lekin koi nahi aaya. 
+CALLER: Humein khed hai sir. Humne aaj dopahar 2 baje ka slot book kar diya hai. Technician aapse sampark karenge.","caller: namaste sir, main jio customer care se bol rahi hoon. aapka fiber connection ka request mila tha. recipient: haan, kal technician aane wale the lekin koi nahi aaya. caller: humein khed hai sir. humne aaj dopahar 2 baje ka slot book kar diya hai. technician aapse sampark karenge.",[],3,val
+CALL_00409,1,hi,digital_arrest,28.41,"CALLER: Yeh call Delhi Police Crime Branch se hai. Aapke Aadhaar card par illegal sim cards issue hue hain. 
+RECIPIENT: Maine koi doosra SIM card nahi liya hai officer. 
+CALLER: In numbers se extortion calls kiye gaye hain. Aapko digital arrest mein rakha gaya hai. 
+RECIPIENT: Aap kya keh rahe hain? Mujhe kya karna hoga? 
+CALLER: Aapke bank balance ki investigation hogi. Turant di gayi safe treasury account mein paise transfer karo.",caller: yeh call delhi police crime branch se hai. aapke aadhaar card par illegal sim cards issue hue hain. recipient: maine koi doosra sim card nahi liya hai officer. caller: in numbers se extortion calls kiye gaye hain. aapko digital arrest mein rakha gaya hai. recipient: aap kya keh rahe hain? mujhe kya karna hoga? caller: aapke bank balance ki investigation hogi. turant di gayi safe treasury account mein paise transfer karo.,"[""digital arrest"", ""police case"", ""secret account"", ""paise transfer karo""]",5,val
+CALL_00094,0,hi,customer_support,16.12,"CALLER: Namaste sir, main Jio customer care se bol rahi hoon. Aapka fiber connection ka request mila tha. 
+RECIPIENT: Haan, kal technician aane wale the lekin koi nahi aaya. 
+CALLER: Humein khed hai sir. Humne aaj dopahar 2 baje ka slot book kar diya hai. Technician aapse sampark karenge.","caller: namaste sir, main jio customer care se bol rahi hoon. aapka fiber connection ka request mila tha. recipient: haan, kal technician aane wale the lekin koi nahi aaya. caller: humein khed hai sir. humne aaj dopahar 2 baje ka slot book kar diya hai. technician aapse sampark karenge.",[],3,val
+CALL_00450,0,en,courier_delivery,14.65,"CALLER: Hello sir, BlueDart delivery agent here. I have an Amazon package for flat number 302. 
+RECIPIENT: Yes, I am at home. Are you at the security gate? 
+CALLER: Yes sir, I am entering the building. Please be ready to collect it. No payment needed as it is prepaid.","caller: hello sir, bluedart delivery agent here. i have an amazon package for flat number 302. recipient: yes, i am at home. are you at the security gate? caller: yes sir, i am entering the building. please be ready to collect it. no payment needed as it is prepaid.",[],3,val
+CALL_00910,0,en,customer_support,27.67,"CALLER: Good morning, this is Priya from Airtel Customer Care. I am following up on your broadband speed complaint. 
+RECIPIENT: Yes, thank you for calling. The internet has been disconnecting frequently since yesterday. 
+CALLER: I apologize for the inconvenience. Let me run a diagnostic test on your line. Is the router light solid green? 
+RECIPIENT: Yes, it is blinking green right now. 
+CALLER: Understood. I have reset the port from our end. Please restart the router after two minutes. No personal details are needed.","caller: good morning, this is priya from airtel customer care. i am following up on your broadband speed complaint. recipient: yes, thank you for calling. the internet has been disconnecting frequently since yesterday. caller: i apologize for the inconvenience. let me run a diagnostic test on your line. is the router light solid green? recipient: yes, it is blinking green right now. caller: understood. i have reset the port from our end. please restart the router after two minutes. no personal details are needed.",[],5,val
+CALL_00683,1,te,bank_impersonation,34.64,"CALLER: Namaskaram andi, nenu State Bank of India main branch nundi call chestunnanu. 
+RECIPIENT: Cheppandi sir, em vishayam? 
+CALLER: Mee account lo suspicious transaction jarigindi andi. Ventane verify cheyyali lekapothe account block avtundi. 
+RECIPIENT: Ayyo, nenu em transaction cheyyaledu andi! 
+CALLER: Bhapadakandi sir. Mee mobile ki vachina 6 digit OTP cheppandi, nenu cancel chestanu. 
+RECIPIENT: OTP evvariki cheppoddu ani bank message vachindi kada sir? 
+CALLER: Idhi security cancellation kosame sir. Ventane OTP cheppandi, time ledu.","caller: namaskaram andi, nenu state bank of india main branch nundi call chestunnanu. recipient: cheppandi sir, em vishayam? caller: mee account lo suspicious transaction jarigindi andi. ventane verify cheyyali lekapothe account block avtundi. recipient: ayyo, nenu em transaction cheyyaledu andi! caller: bhapadakandi sir. mee mobile ki vachina 6 digit otp cheppandi, nenu cancel chestanu. recipient: otp evvariki cheppoddu ani bank message vachindi kada sir? caller: idhi security cancellation kosame sir. ventane otp cheppandi, time ledu.","[""OTP cheppandi"", ""account block avtundi"", ""ventane verify cheyyali""]",7,val
+CALL_00798,0,te,customer_support,14.77,"CALLER: Namaskaram andi, nenu ACT Fibernet nundi call chestunnanu. Mee internet complaint resolve ayyinda andi? 
+RECIPIENT: Avunu andi, technician vachi wire change chesaru, ippudu bagane vastondi. 
+CALLER: Chala santhosham andi. Service feedback kosam message vastundi, rating ivvandi.","caller: namaskaram andi, nenu act fibernet nundi call chestunnanu. mee internet complaint resolve ayyinda andi? recipient: avunu andi, technician vachi wire change chesaru, ippudu bagane vastondi. caller: chala santhosham andi. service feedback kosam message vastundi, rating ivvandi.",[],3,val
+CALL_00668,0,te,hospital_appointment,18.21,"CALLER: Namaskaram, KIMS Hospital reception nundi call andi. Repu mee doctor appointment re-scheduled ayyindi. 
+RECIPIENT: E time ki change chesaru andi? 
+CALLER: Repu udayam 11 gantalaki doctor garu untaru andi.","caller: namaskaram, kims hospital reception nundi call andi. repu mee doctor appointment re-scheduled ayyindi. recipient: e time ki change chesaru andi? caller: repu udayam 11 gantalaki doctor garu untaru andi.",[],3,val
+CALL_00269,1,hi,bank_impersonation,41.54,"CALLER: Namaskar sir, main Bank of Baroda ke verification desk se baat kar raha hoon. 
+RECIPIENT: Haan boliye, kya baat hai? 
+CALLER: Sir aapka KYC update pending hai, aur agar aaj verify nahi hua toh aapka account freeze ho jayega. 
+RECIPIENT: Lekin maine pichle mahine hi branch jaakar form bhara tha. 
+CALLER: Sir branch update reject ho gaya tha. Abhi aapke mobile par 6 digit ka OTP aayega, turant verify karein. 
+RECIPIENT: OTP toh kisi ke saath share karne se mana karte hain na? 
+CALLER: Sir main bank system se hoon, koi personal number nahi hai. OTP share karo warna saare transactions ruk jayenge.","caller: namaskar sir, main bank of baroda ke verification desk se baat kar raha hoon. recipient: haan boliye, kya baat hai? caller: sir aapka kyc update pending hai, aur agar aaj verify nahi hua toh aapka account freeze ho jayega. recipient: lekin maine pichle mahine hi branch jaakar form bhara tha. caller: sir branch update reject ho gaya tha. abhi aapke mobile par 6 digit ka otp aayega, turant verify karein. recipient: otp toh kisi ke saath share karne se mana karte hain na? caller: sir main bank system se hoon, koi personal number nahi hai. otp share karo warna saare transactions ruk jayenge.","[""OTP share karo"", ""account freeze ho jayega"", ""turant verify karein""]",7,val
+CALL_00702,0,te,customer_support,17.04,"CALLER: Namaskaram andi, nenu ACT Fibernet nundi call chestunnanu. Mee internet complaint resolve ayyinda andi? 
+RECIPIENT: Avunu andi, technician vachi wire change chesaru, ippudu bagane vastondi. 
+CALLER: Chala santhosham andi. Service feedback kosam message vastundi, rating ivvandi.","caller: namaskaram andi, nenu act fibernet nundi call chestunnanu. mee internet complaint resolve ayyinda andi? recipient: avunu andi, technician vachi wire change chesaru, ippudu bagane vastondi. caller: chala santhosham andi. service feedback kosam message vastundi, rating ivvandi.",[],3,val
+CALL_00835,1,hi,bank_impersonation,37.15,"CALLER: Namaskar sir, main Bank of Baroda ke verification desk se baat kar raha hoon. 
+RECIPIENT: Haan boliye, kya baat hai? 
+CALLER: Sir aapka KYC update pending hai, aur agar aaj verify nahi hua toh aapka account freeze ho jayega. 
+RECIPIENT: Lekin maine pichle mahine hi branch jaakar form bhara tha. 
+CALLER: Sir branch update reject ho gaya tha. Abhi aapke mobile par 6 digit ka OTP aayega, turant verify karein. 
+RECIPIENT: OTP toh kisi ke saath share karne se mana karte hain na? 
+CALLER: Sir main bank system se hoon, koi personal number nahi hai. OTP share karo warna saare transactions ruk jayenge.","caller: namaskar sir, main bank of baroda ke verification desk se baat kar raha hoon. recipient: haan boliye, kya baat hai? caller: sir aapka kyc update pending hai, aur agar aaj verify nahi hua toh aapka account freeze ho jayega. recipient: lekin maine pichle mahine hi branch jaakar form bhara tha. caller: sir branch update reject ho gaya tha. abhi aapke mobile par 6 digit ka otp aayega, turant verify karein. recipient: otp toh kisi ke saath share karne se mana karte hain na? caller: sir main bank system se hoon, koi personal number nahi hai. otp share karo warna saare transactions ruk jayenge.","[""OTP share karo"", ""account freeze ho jayega"", ""turant verify karein""]",7,val
+CALL_00366,0,en,customer_support,29.15,"CALLER: Good morning, this is Priya from Airtel Customer Care. I am following up on your broadband speed complaint. 
+RECIPIENT: Yes, thank you for calling. The internet has been disconnecting frequently since yesterday. 
+CALLER: I apologize for the inconvenience. Let me run a diagnostic test on your line. Is the router light solid green? 
+RECIPIENT: Yes, it is blinking green right now. 
+CALLER: Understood. I have reset the port from our end. Please restart the router after two minutes. No personal details are needed.","caller: good morning, this is priya from airtel customer care. i am following up on your broadband speed complaint. recipient: yes, thank you for calling. the internet has been disconnecting frequently since yesterday. caller: i apologize for the inconvenience. let me run a diagnostic test on your line. is the router light solid green? recipient: yes, it is blinking green right now. caller: understood. i have reset the port from our end. please restart the router after two minutes. no personal details are needed.",[],5,val
+CALL_00877,1,en,bank_impersonation,47.95,"CALLER: Hello sir, I am calling from State Bank of India fraud prevention department. 
+RECIPIENT: Yes, what is the matter? Is there an issue? 
+CALLER: Sir, an unauthorized transaction of forty-five thousand rupees was attempted on your debit card just now. 
+RECIPIENT: What? I did not do any transaction! Please stop it. 
+CALLER: Do not panic sir. To block this transaction immediately, I have sent a six-digit verification code. Please share the OTP immediately. 
+RECIPIENT: Wait, my bank says never share OTP with anyone. 
+CALLER: Sir, this is the security server! If you delay, your account will be blocked today and money will be lost. Read the six digits now, do not disconnect! 
+RECIPIENT: Okay, let me check the SMS.","caller: hello sir, i am calling from state bank of india fraud prevention department. recipient: yes, what is the matter? is there an issue? caller: sir, an unauthorized transaction of forty-five thousand rupees was attempted on your debit card just now. recipient: what? i did not do any transaction! please stop it. caller: do not panic sir. to block this transaction immediately, i have sent a six-digit verification code. please share the otp immediately. recipient: wait, my bank says never share otp with anyone. caller: sir, this is the security server! if you delay, your account will be blocked today and money will be lost. read the six digits now, do not disconnect! recipient: okay, let me check the sms.","[""share the OTP"", ""account will be blocked"", ""do not disconnect""]",8,val
+CALL_00618,0,hi,delivery_confirmation,19.26,"CALLER: Bhaiya Zomato delivery boy bol raha hoon. Aapka delivery location gate par hai ya tower mein? 
+RECIPIENT: Tower B, second floor par le aaiye. 
+CALLER: Theek hai sir, main lift se upar aa raha hoon.","caller: bhaiya zomato delivery boy bol raha hoon. aapka delivery location gate par hai ya tower mein? recipient: tower b, second floor par le aaiye. caller: theek hai sir, main lift se upar aa raha hoon.",[],3,val
+CALL_00337,1,te,bank_impersonation,42.42,"CALLER: Namaskaram andi, nenu State Bank of India main branch nundi call chestunnanu. 
+RECIPIENT: Cheppandi sir, em vishayam? 
+CALLER: Mee account lo suspicious transaction jarigindi andi. Ventane verify cheyyali lekapothe account block avtundi. 
+RECIPIENT: Ayyo, nenu em transaction cheyyaledu andi! 
+CALLER: Bhapadakandi sir. Mee mobile ki vachina 6 digit OTP cheppandi, nenu cancel chestanu. 
+RECIPIENT: OTP evvariki cheppoddu ani bank message vachindi kada sir? 
+CALLER: Idhi security cancellation kosame sir. Ventane OTP cheppandi, time ledu.","caller: namaskaram andi, nenu state bank of india main branch nundi call chestunnanu. recipient: cheppandi sir, em vishayam? caller: mee account lo suspicious transaction jarigindi andi. ventane verify cheyyali lekapothe account block avtundi. recipient: ayyo, nenu em transaction cheyyaledu andi! caller: bhapadakandi sir. mee mobile ki vachina 6 digit otp cheppandi, nenu cancel chestanu. recipient: otp evvariki cheppoddu ani bank message vachindi kada sir? caller: idhi security cancellation kosame sir. ventane otp cheppandi, time ledu.","[""OTP cheppandi"", ""account block avtundi"", ""ventane verify cheyyali""]",7,val
+CALL_00387,1,en,remote_access_scam,27.25,"CALLER: Dear consumer, your electricity bill update is pending. Your power will be disconnected at 9:30 PM tonight. 
+RECIPIENT: I already paid my electricity bill through Google Pay yesterday! 
+CALLER: Sir, the gateway server did not sync. To update the bill and prevent power cut, install QuickSupport or AnyDesk app from Play Store. 
+RECIPIENT: Is that an official electricity department app? 
+CALLER: Yes sir, it is the government consumer gateway. Install it and tell me the nine-digit code showing on your screen.","caller: dear consumer, your electricity bill update is pending. your power will be disconnected at 9:30 pm tonight. recipient: i already paid my electricity bill through google pay yesterday! caller: sir, the gateway server did not sync. to update the bill and prevent power cut, install quicksupport or anydesk app from play store. recipient: is that an official electricity department app? caller: yes sir, it is the government consumer gateway. install it and tell me the nine-digit code showing on your screen.","[""download AnyDesk"", ""nine digit code"", ""electricity power disconnected""]",5,val
+CALL_00049,1,hi,bank_impersonation,41.32,"CALLER: Namaskar sir, main Bank of Baroda ke verification desk se baat kar raha hoon. 
+RECIPIENT: Haan boliye, kya baat hai? 
+CALLER: Sir aapka KYC update pending hai, aur agar aaj verify nahi hua toh aapka account freeze ho jayega. 
+RECIPIENT: Lekin maine pichle mahine hi branch jaakar form bhara tha. 
+CALLER: Sir branch update reject ho gaya tha. Abhi aapke mobile par 6 digit ka OTP aayega, turant verify karein. 
+RECIPIENT: OTP toh kisi ke saath share karne se mana karte hain na? 
+CALLER: Sir main bank system se hoon, koi personal number nahi hai. OTP share karo warna saare transactions ruk jayenge.","caller: namaskar sir, main bank of baroda ke verification desk se baat kar raha hoon. recipient: haan boliye, kya baat hai? caller: sir aapka kyc update pending hai, aur agar aaj verify nahi hua toh aapka account freeze ho jayega. recipient: lekin maine pichle mahine hi branch jaakar form bhara tha. caller: sir branch update reject ho gaya tha. abhi aapke mobile par 6 digit ka otp aayega, turant verify karein. recipient: otp toh kisi ke saath share karne se mana karte hain na? caller: sir main bank system se hoon, koi personal number nahi hai. otp share karo warna saare transactions ruk jayenge.","[""OTP share karo"", ""account freeze ho jayega"", ""turant verify karein""]",7,val
+CALL_00044,0,en,courier_delivery,15.93,"CALLER: Hello sir, BlueDart delivery agent here. I have an Amazon package for flat number 302. 
+RECIPIENT: Yes, I am at home. Are you at the security gate? 
+CALLER: Yes sir, I am entering the building. Please be ready to collect it. No payment needed as it is prepaid.","caller: hello sir, bluedart delivery agent here. i have an amazon package for flat number 302. recipient: yes, i am at home. are you at the security gate? caller: yes sir, i am entering the building. please be ready to collect it. no payment needed as it is prepaid.",[],3,val
+CALL_00518,0,en,doctor_appointment,15.93,"CALLER: Hello, calling from Apollo Clinic regarding your consultation appointment with Dr. Rao today at 5 PM. 
+RECIPIENT: Yes, I will be reaching by 4:45 PM. 
+CALLER: Perfect. Please carry your previous blood reports and prescription card.","caller: hello, calling from apollo clinic regarding your consultation appointment with dr. rao today at 5 pm. recipient: yes, i will be reaching by 4:45 pm. caller: perfect. please carry your previous blood reports and prescription card.",[],3,val
+CALL_00919,1,te,digital_arrest,27.97,"CALLER: Idhi Hyderabad Cyber Police Station nundi call andi. Mee Aadhaar card meeda illegal parcels vachayi. 
+RECIPIENT: Sir naaku denitho sambandham ledu sir, nenu government employee ni. 
+CALLER: Mee meeda FIR register ayyindi. Meeru ippudu digital arrest lo unnaru. 
+RECIPIENT: Digital arrest aa? Nenu bayatiki vellavacha? 
+CALLER: Ledu, call cut cheyyakudadhu. Verification kosam money transfer cheyyandi.","caller: idhi hyderabad cyber police station nundi call andi. mee aadhaar card meeda illegal parcels vachayi. recipient: sir naaku denitho sambandham ledu sir, nenu government employee ni. caller: mee meeda fir register ayyindi. meeru ippudu digital arrest lo unnaru. recipient: digital arrest aa? nenu bayatiki vellavacha? caller: ledu, call cut cheyyakudadhu. verification kosam money transfer cheyyandi.","[""digital arrest"", ""police case"", ""money transfer cheyyandi"", ""Aadhaar misuse""]",5,val
+CALL_00944,0,hi,delivery_confirmation,16.0,"CALLER: Bhaiya Zomato delivery boy bol raha hoon. Aapka delivery location gate par hai ya tower mein? 
+RECIPIENT: Tower B, second floor par le aaiye. 
+CALLER: Theek hai sir, main lift se upar aa raha hoon.","caller: bhaiya zomato delivery boy bol raha hoon. aapka delivery location gate par hai ya tower mein? recipient: tower b, second floor par le aaiye. caller: theek hai sir, main lift se upar aa raha hoon.",[],3,val
+CALL_00459,1,hi,bank_impersonation,39.88,"CALLER: Namaskar sir, main Bank of Baroda ke verification desk se baat kar raha hoon. 
+RECIPIENT: Haan boliye, kya baat hai? 
+CALLER: Sir aapka KYC update pending hai, aur agar aaj verify nahi hua toh aapka account freeze ho jayega. 
+RECIPIENT: Lekin maine pichle mahine hi branch jaakar form bhara tha. 
+CALLER: Sir branch update reject ho gaya tha. Abhi aapke mobile par 6 digit ka OTP aayega, turant verify karein. 
+RECIPIENT: OTP toh kisi ke saath share karne se mana karte hain na? 
+CALLER: Sir main bank system se hoon, koi personal number nahi hai. OTP share karo warna saare transactions ruk jayenge.","caller: namaskar sir, main bank of baroda ke verification desk se baat kar raha hoon. recipient: haan boliye, kya baat hai? caller: sir aapka kyc update pending hai, aur agar aaj verify nahi hua toh aapka account freeze ho jayega. recipient: lekin maine pichle mahine hi branch jaakar form bhara tha. caller: sir branch update reject ho gaya tha. abhi aapke mobile par 6 digit ka otp aayega, turant verify karein. recipient: otp toh kisi ke saath share karne se mana karte hain na? caller: sir main bank system se hoon, koi personal number nahi hai. otp share karo warna saare transactions ruk jayenge.","[""OTP share karo"", ""account freeze ho jayega"", ""turant verify karein""]",7,val
+CALL_00581,1,en,digital_arrest,39.33,"CALLER: This is Officer Vikram Rathore from Mumbai Cyber Crime and CBI headquarters. 
+RECIPIENT: Why are you calling me? I am a law-abiding citizen. 
+CALLER: A parcel containing five passports and synthetic narcotics was intercepted at Mumbai international airport registered under your Aadhaar number. 
+RECIPIENT: I never sent any parcel! Someone must have misused my identity. 
+CALLER: An arrest warrant has been issued against you under the Money Laundering Act. You are currently under digital arrest. 
+RECIPIENT: Digital arrest? What does that mean? How do I clear this? 
+CALLER: You must stay on this video call, do not inform family, and transfer your account funds to the Reserve Bank secret verification account immediately.","caller: this is officer vikram rathore from mumbai cyber crime and cbi headquarters. recipient: why are you calling me? i am a law-abiding citizen. caller: a parcel containing five passports and synthetic narcotics was intercepted at mumbai international airport registered under your aadhaar number. recipient: i never sent any parcel! someone must have misused my identity. caller: an arrest warrant has been issued against you under the money laundering act. you are currently under digital arrest. recipient: digital arrest? what does that mean? how do i clear this? caller: you must stay on this video call, do not inform family, and transfer your account funds to the reserve bank secret verification account immediately.","[""digital arrest"", ""CBI headquarters"", ""illegal parcel"", ""passport seized""]",7,val
+CALL_00982,0,hi,customer_support,16.76,"CALLER: Namaste sir, main Jio customer care se bol rahi hoon. Aapka fiber connection ka request mila tha. 
+RECIPIENT: Haan, kal technician aane wale the lekin koi nahi aaya. 
+CALLER: Humein khed hai sir. Humne aaj dopahar 2 baje ka slot book kar diya hai. Technician aapse sampark karenge.","caller: namaste sir, main jio customer care se bol rahi hoon. aapka fiber connection ka request mila tha. recipient: haan, kal technician aane wale the lekin koi nahi aaya. caller: humein khed hai sir. humne aaj dopahar 2 baje ka slot book kar diya hai. technician aapse sampark karenge.",[],3,val
+CALL_00298,0,en,courier_delivery,17.25,"CALLER: Hello sir, BlueDart delivery agent here. I have an Amazon package for flat number 302. 
+RECIPIENT: Yes, I am at home. Are you at the security gate? 
+CALLER: Yes sir, I am entering the building. Please be ready to collect it. No payment needed as it is prepaid.","caller: hello sir, bluedart delivery agent here. i have an amazon package for flat number 302. recipient: yes, i am at home. are you at the security gate? caller: yes sir, i am entering the building. please be ready to collect it. no payment needed as it is prepaid.",[],3,val
+CALL_00949,1,hi,digital_arrest,24.95,"CALLER: Yeh call Delhi Police Crime Branch se hai. Aapke Aadhaar card par illegal sim cards issue hue hain. 
+RECIPIENT: Maine koi doosra SIM card nahi liya hai officer. 
+CALLER: In numbers se extortion calls kiye gaye hain. Aapko digital arrest mein rakha gaya hai. 
+RECIPIENT: Aap kya keh rahe hain? Mujhe kya karna hoga? 
+CALLER: Aapke bank balance ki investigation hogi. Turant di gayi safe treasury account mein paise transfer karo.",caller: yeh call delhi police crime branch se hai. aapke aadhaar card par illegal sim cards issue hue hain. recipient: maine koi doosra sim card nahi liya hai officer. caller: in numbers se extortion calls kiye gaye hain. aapko digital arrest mein rakha gaya hai. recipient: aap kya keh rahe hain? mujhe kya karna hoga? caller: aapke bank balance ki investigation hogi. turant di gayi safe treasury account mein paise transfer karo.,"[""digital arrest"", ""police case"", ""secret account"", ""paise transfer karo""]",5,val
+CALL_00657,1,hi,digital_arrest,25.16,"CALLER: Yeh call Delhi Police Crime Branch se hai. Aapke Aadhaar card par illegal sim cards issue hue hain. 
+RECIPIENT: Maine koi doosra SIM card nahi liya hai officer. 
+CALLER: In numbers se extortion calls kiye gaye hain. Aapko digital arrest mein rakha gaya hai. 
+RECIPIENT: Aap kya keh rahe hain? Mujhe kya karna hoga? 
+CALLER: Aapke bank balance ki investigation hogi. Turant di gayi safe treasury account mein paise transfer karo.",caller: yeh call delhi police crime branch se hai. aapke aadhaar card par illegal sim cards issue hue hain. recipient: maine koi doosra sim card nahi liya hai officer. caller: in numbers se extortion calls kiye gaye hain. aapko digital arrest mein rakha gaya hai. recipient: aap kya keh rahe hain? mujhe kya karna hoga? caller: aapke bank balance ki investigation hogi. turant di gayi safe treasury account mein paise transfer karo.,"[""digital arrest"", ""police case"", ""secret account"", ""paise transfer karo""]",5,val
+CALL_00039,1,te,digital_arrest,31.06,"CALLER: Idhi Hyderabad Cyber Police Station nundi call andi. Mee Aadhaar card meeda illegal parcels vachayi. 
+RECIPIENT: Sir naaku denitho sambandham ledu sir, nenu government employee ni. 
+CALLER: Mee meeda FIR register ayyindi. Meeru ippudu digital arrest lo unnaru. 
+RECIPIENT: Digital arrest aa? Nenu bayatiki vellavacha? 
+CALLER: Ledu, call cut cheyyakudadhu. Verification kosam money transfer cheyyandi.","caller: idhi hyderabad cyber police station nundi call andi. mee aadhaar card meeda illegal parcels vachayi. recipient: sir naaku denitho sambandham ledu sir, nenu government employee ni. caller: mee meeda fir register ayyindi. meeru ippudu digital arrest lo unnaru. recipient: digital arrest aa? nenu bayatiki vellavacha? caller: ledu, call cut cheyyakudadhu. verification kosam money transfer cheyyandi.","[""digital arrest"", ""police case"", ""money transfer cheyyandi"", ""Aadhaar misuse""]",5,val
+CALL_00087,1,te,digital_arrest,29.11,"CALLER: Idhi Hyderabad Cyber Police Station nundi call andi. Mee Aadhaar card meeda illegal parcels vachayi. 
+RECIPIENT: Sir naaku denitho sambandham ledu sir, nenu government employee ni. 
+CALLER: Mee meeda FIR register ayyindi. Meeru ippudu digital arrest lo unnaru. 
+RECIPIENT: Digital arrest aa? Nenu bayatiki vellavacha? 
+CALLER: Ledu, call cut cheyyakudadhu. Verification kosam money transfer cheyyandi.","caller: idhi hyderabad cyber police station nundi call andi. mee aadhaar card meeda illegal parcels vachayi. recipient: sir naaku denitho sambandham ledu sir, nenu government employee ni. caller: mee meeda fir register ayyindi. meeru ippudu digital arrest lo unnaru. recipient: digital arrest aa? nenu bayatiki vellavacha? caller: ledu, call cut cheyyakudadhu. verification kosam money transfer cheyyandi.","[""digital arrest"", ""police case"", ""money transfer cheyyandi"", ""Aadhaar misuse""]",5,val
+CALL_00313,1,hi,bank_impersonation,41.66,"CALLER: Namaskar sir, main Bank of Baroda ke verification desk se baat kar raha hoon. 
+RECIPIENT: Haan boliye, kya baat hai? 
+CALLER: Sir aapka KYC update pending hai, aur agar aaj verify nahi hua toh aapka account freeze ho jayega. 
+RECIPIENT: Lekin maine pichle mahine hi branch jaakar form bhara tha. 
+CALLER: Sir branch update reject ho gaya tha. Abhi aapke mobile par 6 digit ka OTP aayega, turant verify karein. 
+RECIPIENT: OTP toh kisi ke saath share karne se mana karte hain na? 
+CALLER: Sir main bank system se hoon, koi personal number nahi hai. OTP share karo warna saare transactions ruk jayenge.","caller: namaskar sir, main bank of baroda ke verification desk se baat kar raha hoon. recipient: haan boliye, kya baat hai? caller: sir aapka kyc update pending hai, aur agar aaj verify nahi hua toh aapka account freeze ho jayega. recipient: lekin maine pichle mahine hi branch jaakar form bhara tha. caller: sir branch update reject ho gaya tha. abhi aapke mobile par 6 digit ka otp aayega, turant verify karein. recipient: otp toh kisi ke saath share karne se mana karte hain na? caller: sir main bank system se hoon, koi personal number nahi hai. otp share karo warna saare transactions ruk jayenge.","[""OTP share karo"", ""account freeze ho jayega"", ""turant verify karein""]",7,val
+CALL_00763,1,te,digital_arrest,28.13,"CALLER: Idhi Hyderabad Cyber Police Station nundi call andi. Mee Aadhaar card meeda illegal parcels vachayi. 
+RECIPIENT: Sir naaku denitho sambandham ledu sir, nenu government employee ni. 
+CALLER: Mee meeda FIR register ayyindi. Meeru ippudu digital arrest lo unnaru. 
+RECIPIENT: Digital arrest aa? Nenu bayatiki vellavacha? 
+CALLER: Ledu, call cut cheyyakudadhu. Verification kosam money transfer cheyyandi.","caller: idhi hyderabad cyber police station nundi call andi. mee aadhaar card meeda illegal parcels vachayi. recipient: sir naaku denitho sambandham ledu sir, nenu government employee ni. caller: mee meeda fir register ayyindi. meeru ippudu digital arrest lo unnaru. recipient: digital arrest aa? nenu bayatiki vellavacha? caller: ledu, call cut cheyyakudadhu. verification kosam money transfer cheyyandi.","[""digital arrest"", ""police case"", ""money transfer cheyyandi"", ""Aadhaar misuse""]",5,val
+CALL_00405,1,te,bank_impersonation,35.95,"CALLER: Namaskaram andi, nenu State Bank of India main branch nundi call chestunnanu. 
+RECIPIENT: Cheppandi sir, em vishayam? 
+CALLER: Mee account lo suspicious transaction jarigindi andi. Ventane verify cheyyali lekapothe account block avtundi. 
+RECIPIENT: Ayyo, nenu em transaction cheyyaledu andi! 
+CALLER: Bhapadakandi sir. Mee mobile ki vachina 6 digit OTP cheppandi, nenu cancel chestanu. 
+RECIPIENT: OTP evvariki cheppoddu ani bank message vachindi kada sir? 
+CALLER: Idhi security cancellation kosame sir. Ventane OTP cheppandi, time ledu.","caller: namaskaram andi, nenu state bank of india main branch nundi call chestunnanu. recipient: cheppandi sir, em vishayam? caller: mee account lo suspicious transaction jarigindi andi. ventane verify cheyyali lekapothe account block avtundi. recipient: ayyo, nenu em transaction cheyyaledu andi! caller: bhapadakandi sir. mee mobile ki vachina 6 digit otp cheppandi, nenu cancel chestanu. recipient: otp evvariki cheppoddu ani bank message vachindi kada sir? caller: idhi security cancellation kosame sir. ventane otp cheppandi, time ledu.","[""OTP cheppandi"", ""account block avtundi"", ""ventane verify cheyyali""]",7,val
+CALL_00322,0,hi,delivery_confirmation,16.02,"CALLER: Bhaiya Zomato delivery boy bol raha hoon. Aapka delivery location gate par hai ya tower mein? 
+RECIPIENT: Tower B, second floor par le aaiye. 
+CALLER: Theek hai sir, main lift se upar aa raha hoon.","caller: bhaiya zomato delivery boy bol raha hoon. aapka delivery location gate par hai ya tower mein? recipient: tower b, second floor par le aaiye. caller: theek hai sir, main lift se upar aa raha hoon.",[],3,val
+CALL_00548,0,en,courier_delivery,14.91,"CALLER: Hello sir, BlueDart delivery agent here. I have an Amazon package for flat number 302. 
+RECIPIENT: Yes, I am at home. Are you at the security gate? 
+CALLER: Yes sir, I am entering the building. Please be ready to collect it. No payment needed as it is prepaid.","caller: hello sir, bluedart delivery agent here. i have an amazon package for flat number 302. recipient: yes, i am at home. are you at the security gate? caller: yes sir, i am entering the building. please be ready to collect it. no payment needed as it is prepaid.",[],3,val
+CALL_00592,0,hi,delivery_confirmation,17.25,"CALLER: Bhaiya Zomato delivery boy bol raha hoon. Aapka delivery location gate par hai ya tower mein? 
+RECIPIENT: Tower B, second floor par le aaiye. 
+CALLER: Theek hai sir, main lift se upar aa raha hoon.","caller: bhaiya zomato delivery boy bol raha hoon. aapka delivery location gate par hai ya tower mein? recipient: tower b, second floor par le aaiye. caller: theek hai sir, main lift se upar aa raha hoon.",[],3,val
+CALL_00128,0,te,hospital_appointment,16.38,"CALLER: Namaskaram, KIMS Hospital reception nundi call andi. Repu mee doctor appointment re-scheduled ayyindi. 
+RECIPIENT: E time ki change chesaru andi? 
+CALLER: Repu udayam 11 gantalaki doctor garu untaru andi.","caller: namaskaram, kims hospital reception nundi call andi. repu mee doctor appointment re-scheduled ayyindi. recipient: e time ki change chesaru andi? caller: repu udayam 11 gantalaki doctor garu untaru andi.",[],3,val
+CALL_00602,0,hi,delivery_confirmation,15.49,"CALLER: Bhaiya Zomato delivery boy bol raha hoon. Aapka delivery location gate par hai ya tower mein? 
+RECIPIENT: Tower B, second floor par le aaiye. 
+CALLER: Theek hai sir, main lift se upar aa raha hoon.","caller: bhaiya zomato delivery boy bol raha hoon. aapka delivery location gate par hai ya tower mein? recipient: tower b, second floor par le aaiye. caller: theek hai sir, main lift se upar aa raha hoon.",[],3,val
+CALL_00841,1,en,digital_arrest,36.03,"CALLER: This is Officer Vikram Rathore from Mumbai Cyber Crime and CBI headquarters. 
+RECIPIENT: Why are you calling me? I am a law-abiding citizen. 
+CALLER: A parcel containing five passports and synthetic narcotics was intercepted at Mumbai international airport registered under your Aadhaar number. 
+RECIPIENT: I never sent any parcel! Someone must have misused my identity. 
+CALLER: An arrest warrant has been issued against you under the Money Laundering Act. You are currently under digital arrest. 
+RECIPIENT: Digital arrest? What does that mean? How do I clear this? 
+CALLER: You must stay on this video call, do not inform family, and transfer your account funds to the Reserve Bank secret verification account immediately.","caller: this is officer vikram rathore from mumbai cyber crime and cbi headquarters. recipient: why are you calling me? i am a law-abiding citizen. caller: a parcel containing five passports and synthetic narcotics was intercepted at mumbai international airport registered under your aadhaar number. recipient: i never sent any parcel! someone must have misused my identity. caller: an arrest warrant has been issued against you under the money laundering act. you are currently under digital arrest. recipient: digital arrest? what does that mean? how do i clear this? caller: you must stay on this video call, do not inform family, and transfer your account funds to the reserve bank secret verification account immediately.","[""digital arrest"", ""CBI headquarters"", ""illegal parcel"", ""passport seized""]",7,val
+CALL_00051,1,hi,digital_arrest,27.12,"CALLER: Yeh call Delhi Police Crime Branch se hai. Aapke Aadhaar card par illegal sim cards issue hue hain. 
+RECIPIENT: Maine koi doosra SIM card nahi liya hai officer. 
+CALLER: In numbers se extortion calls kiye gaye hain. Aapko digital arrest mein rakha gaya hai. 
+RECIPIENT: Aap kya keh rahe hain? Mujhe kya karna hoga? 
+CALLER: Aapke bank balance ki investigation hogi. Turant di gayi safe treasury account mein paise transfer karo.",caller: yeh call delhi police crime branch se hai. aapke aadhaar card par illegal sim cards issue hue hain. recipient: maine koi doosra sim card nahi liya hai officer. caller: in numbers se extortion calls kiye gaye hain. aapko digital arrest mein rakha gaya hai. recipient: aap kya keh rahe hain? mujhe kya karna hoga? caller: aapke bank balance ki investigation hogi. turant di gayi safe treasury account mein paise transfer karo.,"[""digital arrest"", ""police case"", ""secret account"", ""paise transfer karo""]",5,val
+CALL_00609,1,hi,digital_arrest,29.32,"CALLER: Yeh call Delhi Police Crime Branch se hai. Aapke Aadhaar card par illegal sim cards issue hue hain. 
+RECIPIENT: Maine koi doosra SIM card nahi liya hai officer. 
+CALLER: In numbers se extortion calls kiye gaye hain. Aapko digital arrest mein rakha gaya hai. 
+RECIPIENT: Aap kya keh rahe hain? Mujhe kya karna hoga? 
+CALLER: Aapke bank balance ki investigation hogi. Turant di gayi safe treasury account mein paise transfer karo.",caller: yeh call delhi police crime branch se hai. aapke aadhaar card par illegal sim cards issue hue hain. recipient: maine koi doosra sim card nahi liya hai officer. caller: in numbers se extortion calls kiye gaye hain. aapko digital arrest mein rakha gaya hai. recipient: aap kya keh rahe hain? mujhe kya karna hoga? caller: aapke bank balance ki investigation hogi. turant di gayi safe treasury account mein paise transfer karo.,"[""digital arrest"", ""police case"", ""secret account"", ""paise transfer karo""]",5,val
+CALL_00899,1,en,remote_access_scam,27.79,"CALLER: Dear consumer, your electricity bill update is pending. Your power will be disconnected at 9:30 PM tonight. 
+RECIPIENT: I already paid my electricity bill through Google Pay yesterday! 
+CALLER: Sir, the gateway server did not sync. To update the bill and prevent power cut, install QuickSupport or AnyDesk app from Play Store. 
+RECIPIENT: Is that an official electricity department app? 
+CALLER: Yes sir, it is the government consumer gateway. Install it and tell me the nine-digit code showing on your screen.","caller: dear consumer, your electricity bill update is pending. your power will be disconnected at 9:30 pm tonight. recipient: i already paid my electricity bill through google pay yesterday! caller: sir, the gateway server did not sync. to update the bill and prevent power cut, install quicksupport or anydesk app from play store. recipient: is that an official electricity department app? caller: yes sir, it is the government consumer gateway. install it and tell me the nine-digit code showing on your screen.","[""download AnyDesk"", ""nine digit code"", ""electricity power disconnected""]",5,val
+CALL_00247,1,en,digital_arrest,37.56,"CALLER: This is Officer Vikram Rathore from Mumbai Cyber Crime and CBI headquarters. 
+RECIPIENT: Why are you calling me? I am a law-abiding citizen. 
+CALLER: A parcel containing five passports and synthetic narcotics was intercepted at Mumbai international airport registered under your Aadhaar number. 
+RECIPIENT: I never sent any parcel! Someone must have misused my identity. 
+CALLER: An arrest warrant has been issued against you under the Money Laundering Act. You are currently under digital arrest. 
+RECIPIENT: Digital arrest? What does that mean? How do I clear this? 
+CALLER: You must stay on this video call, do not inform family, and transfer your account funds to the Reserve Bank secret verification account immediately.","caller: this is officer vikram rathore from mumbai cyber crime and cbi headquarters. recipient: why are you calling me? i am a law-abiding citizen. caller: a parcel containing five passports and synthetic narcotics was intercepted at mumbai international airport registered under your aadhaar number. recipient: i never sent any parcel! someone must have misused my identity. caller: an arrest warrant has been issued against you under the money laundering act. you are currently under digital arrest. recipient: digital arrest? what does that mean? how do i clear this? caller: you must stay on this video call, do not inform family, and transfer your account funds to the reserve bank secret verification account immediately.","[""digital arrest"", ""CBI headquarters"", ""illegal parcel"", ""passport seized""]",7,val
+CALL_00317,1,hi,bank_impersonation,39.7,"CALLER: Namaskar sir, main Bank of Baroda ke verification desk se baat kar raha hoon. 
+RECIPIENT: Haan boliye, kya baat hai? 
+CALLER: Sir aapka KYC update pending hai, aur agar aaj verify nahi hua toh aapka account freeze ho jayega. 
+RECIPIENT: Lekin maine pichle mahine hi branch jaakar form bhara tha. 
+CALLER: Sir branch update reject ho gaya tha. Abhi aapke mobile par 6 digit ka OTP aayega, turant verify karein. 
+RECIPIENT: OTP toh kisi ke saath share karne se mana karte hain na? 
+CALLER: Sir main bank system se hoon, koi personal number nahi hai. OTP share karo warna saare transactions ruk jayenge.","caller: namaskar sir, main bank of baroda ke verification desk se baat kar raha hoon. recipient: haan boliye, kya baat hai? caller: sir aapka kyc update pending hai, aur agar aaj verify nahi hua toh aapka account freeze ho jayega. recipient: lekin maine pichle mahine hi branch jaakar form bhara tha. caller: sir branch update reject ho gaya tha. abhi aapke mobile par 6 digit ka otp aayega, turant verify karein. recipient: otp toh kisi ke saath share karne se mana karte hain na? caller: sir main bank system se hoon, koi personal number nahi hai. otp share karo warna saare transactions ruk jayenge.","[""OTP share karo"", ""account freeze ho jayega"", ""turant verify karein""]",7,val
+CALL_00287,1,en,remote_access_scam,26.68,"CALLER: Dear consumer, your electricity bill update is pending. Your power will be disconnected at 9:30 PM tonight. 
+RECIPIENT: I already paid my electricity bill through Google Pay yesterday! 
+CALLER: Sir, the gateway server did not sync. To update the bill and prevent power cut, install QuickSupport or AnyDesk app from Play Store. 
+RECIPIENT: Is that an official electricity department app? 
+CALLER: Yes sir, it is the government consumer gateway. Install it and tell me the nine-digit code showing on your screen.","caller: dear consumer, your electricity bill update is pending. your power will be disconnected at 9:30 pm tonight. recipient: i already paid my electricity bill through google pay yesterday! caller: sir, the gateway server did not sync. to update the bill and prevent power cut, install quicksupport or anydesk app from play store. recipient: is that an official electricity department app? caller: yes sir, it is the government consumer gateway. install it and tell me the nine-digit code showing on your screen.","[""download AnyDesk"", ""nine digit code"", ""electricity power disconnected""]",5,val
+CALL_00143,1,en,digital_arrest,40.23,"CALLER: This is Officer Vikram Rathore from Mumbai Cyber Crime and CBI headquarters. 
+RECIPIENT: Why are you calling me? I am a law-abiding citizen. 
+CALLER: A parcel containing five passports and synthetic narcotics was intercepted at Mumbai international airport registered under your Aadhaar number. 
+RECIPIENT: I never sent any parcel! Someone must have misused my identity. 
+CALLER: An arrest warrant has been issued against you under the Money Laundering Act. You are currently under digital arrest. 
+RECIPIENT: Digital arrest? What does that mean? How do I clear this? 
+CALLER: You must stay on this video call, do not inform family, and transfer your account funds to the Reserve Bank secret verification account immediately.","caller: this is officer vikram rathore from mumbai cyber crime and cbi headquarters. recipient: why are you calling me? i am a law-abiding citizen. caller: a parcel containing five passports and synthetic narcotics was intercepted at mumbai international airport registered under your aadhaar number. recipient: i never sent any parcel! someone must have misused my identity. caller: an arrest warrant has been issued against you under the money laundering act. you are currently under digital arrest. recipient: digital arrest? what does that mean? how do i clear this? caller: you must stay on this video call, do not inform family, and transfer your account funds to the reserve bank secret verification account immediately.","[""digital arrest"", ""CBI headquarters"", ""illegal parcel"", ""passport seized""]",7,val
