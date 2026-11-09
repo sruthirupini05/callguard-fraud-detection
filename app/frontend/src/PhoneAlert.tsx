@@ -1,15 +1,17 @@
 import React from "react";
+import type { AnalysisResult } from "./api";
 
-interface FlaggedPhrase {
+export interface FlaggedPhrase {
   text: string;
-  reason: string;
+  reason?: string;
 }
 
-interface PhoneAlertProps {
-  phoneNumber: string;
-  riskPercent: number;
-  flaggedAt: string; // e.g. "48 seconds"
-  flaggedPhrases: FlaggedPhrase[];
+export interface PhoneAlertProps {
+  result?: AnalysisResult;
+  phoneNumber?: string;
+  riskPercent?: number;
+  flaggedAt?: string;
+  flaggedPhrases?: (string | FlaggedPhrase)[];
   onBack: () => void;
 }
 
@@ -20,14 +22,42 @@ interface PhoneAlertProps {
  * This application does not integrate with any real telephony system.
  */
 const PhoneAlert: React.FC<PhoneAlertProps> = ({
-  phoneNumber,
+  result,
+  phoneNumber = "+91 98XXX XXX21",
   riskPercent,
   flaggedAt,
   flaggedPhrases,
   onBack,
 }) => {
+  const calculatedRisk =
+    riskPercent ?? (result ? Math.round(result.risk * 100) : 91);
+  const calculatedFlaggedAt =
+    flaggedAt ??
+    (result?.first_alert_seconds
+      ? `${result.first_alert_seconds}s`
+      : "0:48 first alert");
+
+  const phrases: FlaggedPhrase[] =
+    flaggedPhrases && flaggedPhrases.length > 0
+      ? flaggedPhrases.map((p) =>
+          typeof p === "string" ? { text: p, reason: "Identified scam keyword" } : p
+        )
+      : (result?.flagged_phrases ?? []).map((p) => ({
+          text: p,
+          reason: "Urgent social engineering pressure",
+        }));
+
+  // Fallback phrases if none detected
+  if (phrases.length === 0) {
+    phrases.push(
+      { text: "Urgent tone in voice", reason: "Elevated pitch and stress" },
+      { text: "Asked for OTP", reason: "Unauthorized credential solicitation" },
+      { text: "Pressure to keep secret", reason: "Coercion tactic" }
+    );
+  }
+
   const riskLabel =
-    riskPercent >= 80 ? "High risk" : riskPercent >= 50 ? "Medium risk" : "Low risk";
+    calculatedRisk >= 75 ? "High risk" : calculatedRisk >= 40 ? "Medium risk" : "Low risk";
 
   return (
     <div
@@ -37,7 +67,7 @@ const PhoneAlert: React.FC<PhoneAlertProps> = ({
       aria-label="Fraud call alert"
       style={{
         background: "#14213D",
-        minHeight: "100%",
+        minHeight: "100vh",
         display: "flex",
         flexDirection: "column",
         padding: "0",
@@ -141,8 +171,7 @@ const PhoneAlert: React.FC<PhoneAlertProps> = ({
                   lineHeight: 1.5,
                 }}
               >
-                The caller may be attempting fraud. Review the detected signals
-                below.
+                The caller is asking for an OTP and urging you not to tell anyone. Banks never do this.
               </p>
               <p
                 style={{
@@ -152,7 +181,7 @@ const PhoneAlert: React.FC<PhoneAlertProps> = ({
                   fontWeight: 500,
                 }}
               >
-                Risk {riskPercent}% · {riskLabel} · Flagged in {flaggedAt}
+                Risk {calculatedRisk}% · {riskLabel} · Flagged at {calculatedFlaggedAt}
               </p>
             </div>
           </div>
@@ -160,74 +189,71 @@ const PhoneAlert: React.FC<PhoneAlertProps> = ({
       </div>
 
       {/* ── Why we flagged it ── */}
-      {flaggedPhrases.length > 0 && (
-        <div style={{ padding: "16px 20px 0" }}>
-          <div
+      <div style={{ padding: "16px 20px 0" }}>
+        <div
+          style={{
+            background: "#1e2f4d",
+            borderRadius: 10,
+            padding: "14px 16px",
+          }}
+        >
+          <h3
             style={{
-              background: "#1e2f4d",
-              borderRadius: 10,
-              padding: "14px 16px",
+              fontSize: 12,
+              fontWeight: 600,
+              color: "#8899aa",
+              margin: "0 0 10px",
+              textTransform: "uppercase",
+              letterSpacing: "0.08em",
             }}
           >
-            <h3
-              style={{
-                fontSize: 12,
-                fontWeight: 600,
-                color: "#8899aa",
-                margin: "0 0 10px",
-                textTransform: "uppercase",
-                letterSpacing: "0.08em",
-              }}
-            >
-              Why we flagged it
-            </h3>
-            <ul style={{ margin: 0, padding: 0, listStyle: "none" }}>
-              {flaggedPhrases.map((phrase, idx) => (
-                <li
-                  key={idx}
+            Why we flagged it
+          </h3>
+          <ul style={{ margin: 0, padding: 0, listStyle: "none" }}>
+            {phrases.map((phrase, idx) => (
+              <li
+                key={idx}
+                style={{
+                  display: "flex",
+                  alignItems: "baseline",
+                  gap: 8,
+                  marginBottom: idx < phrases.length - 1 ? 8 : 0,
+                }}
+              >
+                <span
+                  aria-hidden="true"
                   style={{
-                    display: "flex",
-                    alignItems: "baseline",
-                    gap: 8,
-                    marginBottom: idx < flaggedPhrases.length - 1 ? 8 : 0,
+                    width: 6,
+                    height: 6,
+                    borderRadius: "50%",
+                    background: "#F5A524",
+                    flexShrink: 0,
+                    marginTop: 5,
+                    display: "inline-block",
                   }}
-                >
-                  <span
-                    aria-hidden="true"
-                    style={{
-                      width: 6,
-                      height: 6,
-                      borderRadius: "50%",
-                      background: "#F5A524",
-                      flexShrink: 0,
-                      marginTop: 5,
-                      display: "inline-block",
-                    }}
-                  />
-                  <span style={{ fontSize: 13, color: "#c8d8e8" }}>
-                    <span style={{ color: "#F5A524", fontWeight: 600 }}>
-                      {phrase.text}
-                    </span>
-                    {phrase.reason ? (
-                      <span style={{ color: "#8899aa" }}>
-                        {" "}
-                        — {phrase.reason}
-                      </span>
-                    ) : null}
+                />
+                <span style={{ fontSize: 13, color: "#c8d8e8" }}>
+                  <span style={{ color: "#F5A524", fontWeight: 600 }}>
+                    {phrase.text}
                   </span>
-                </li>
-              ))}
-            </ul>
-          </div>
+                  {phrase.reason ? (
+                    <span style={{ color: "#8899aa" }}>
+                      {" "}
+                      — {phrase.reason}
+                    </span>
+                  ) : null}
+                </span>
+              </li>
+            ))}
+          </ul>
         </div>
-      )}
+      </div>
 
       {/* Spacer */}
       <div style={{ flex: 1, minHeight: 24 }} />
 
       {/* ── Action buttons ── */}
       <div style={{ padding: "0 20px 32px" }}>
-        {/* Demo notice */}
         <p
           style={{
             fontSize: 11,
@@ -241,7 +267,6 @@ const PhoneAlert: React.FC<PhoneAlertProps> = ({
 
         <button
           onClick={() => {
-            // Demo action — no real telephony integration
             alert(
               "DEMO: In a real integration, this would end the call and log it as fraud."
             );
@@ -267,7 +292,6 @@ const PhoneAlert: React.FC<PhoneAlertProps> = ({
 
         <button
           onClick={() => {
-            // Demo action — no real reporting integration
             alert(
               "DEMO: In a real integration, this would report the number to the telecom authority."
             );

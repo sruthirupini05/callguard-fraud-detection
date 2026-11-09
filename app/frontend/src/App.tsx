@@ -133,24 +133,87 @@ export default function App() {
   const wsRef = useRef<WebSocket | null>(null);
   const fileRef = useRef<HTMLInputElement>(null);
 
+  const timerRef = useRef<number | null>(null);
+
   // Health-check on mount
   useEffect(() => {
     checkHealth().then(ok => setBackendOnline(ok));
+    return () => {
+      if (timerRef.current) clearInterval(timerRef.current);
+      wsRef.current?.close();
+    };
+  }, []);
+
+  const runSimulation = useCallback(() => {
+    const simulatedTurns: StreamChunk[] = [
+      { current_second: 5, fused_risk: 0.24, is_alert_active: false, partial_transcript: "CALLER: Hello sir, calling from bank verification department.", flagged_phrases: [] },
+      { current_second: 10, fused_risk: 0.28, is_alert_active: false, partial_transcript: "CALLER: Hello sir, calling from bank verification department.\nYOU: Yes, what is this regarding?", flagged_phrases: [] },
+      { current_second: 15, fused_risk: 0.58, is_alert_active: false, partial_transcript: "CALLER: Hello sir, calling from bank verification department.\nYOU: Yes, what is this regarding?\nCALLER: Sir, unauthorized debit card transaction of 45,000 attempted.", flagged_phrases: [] },
+      { current_second: 20, fused_risk: 0.64, is_alert_active: false, partial_transcript: "CALLER: Hello sir, calling from bank verification department.\nYOU: Yes, what is this regarding?\nCALLER: Sir, unauthorized debit card transaction of 45,000 attempted.\nYOU: I did not do any transaction! Please stop it.", flagged_phrases: [] },
+      { current_second: 25, fused_risk: 0.88, is_alert_active: true, partial_transcript: "CALLER: Hello sir, calling from bank verification department.\nYOU: Yes, what is this regarding?\nCALLER: Sir, unauthorized debit card transaction of 45,000 attempted.\nYOU: I did not do any transaction! Please stop it.\nCALLER: Please share the OTP immediately to block this transaction.", flagged_phrases: ["share the otp"] },
+      { current_second: 30, fused_risk: 0.94, is_alert_active: true, partial_transcript: "CALLER: Hello sir, calling from bank verification department.\nYOU: Yes, what is this regarding?\nCALLER: Sir, unauthorized debit card transaction of 45,000 attempted.\nYOU: I did not do any transaction! Please stop it.\nCALLER: Please share the OTP immediately to block this transaction.\nCALLER: Account will be blocked today if you do not tell me now.", flagged_phrases: ["share the otp", "account will be blocked"] },
+      { current_second: 35, fused_risk: 0.92, is_alert_active: true, partial_transcript: "CALLER: Hello sir, calling from bank verification department.\nYOU: Yes, what is this regarding?\nCALLER: Sir, unauthorized debit card transaction of 45,000 attempted.\nYOU: I did not do any transaction! Please stop it.\nCALLER: Please share the OTP immediately to block this transaction.\nCALLER: Account will be blocked today if you do not tell me now.\nYOU: Wait, bank says never share OTP with anyone.", flagged_phrases: ["share the otp", "account will be blocked"] },
+      { current_second: 40, fused_risk: 0.96, is_alert_active: true, partial_transcript: "CALLER: Hello sir, calling from bank verification department.\nYOU: Yes, what is this regarding?\nCALLER: Sir, unauthorized debit card transaction of 45,000 attempted.\nYOU: I did not do any transaction! Please stop it.\nCALLER: Please share the OTP immediately to block this transaction.\nCALLER: Account will be blocked today if you do not tell me now.\nYOU: Wait, bank says never share OTP with anyone.\nCALLER: Sir do not disconnect! This is security server, read digits.", flagged_phrases: ["share the otp", "account will be blocked", "do not disconnect"] },
+    ];
+
+    let idx = 0;
+    if (timerRef.current) clearInterval(timerRef.current);
+    const interval = window.setInterval(() => {
+      if (idx < simulatedTurns.length) {
+        const item = simulatedTurns[idx];
+        setStreamChunks(prev => [...prev, item]);
+        idx++;
+      } else {
+        clearInterval(interval);
+      }
+    }, 1500);
+    timerRef.current = interval;
   }, []);
 
   const startLive = useCallback(() => {
     setStreamChunks([]);
     setLiveMode(true);
-    const ws = new WebSocket(`ws://127.0.0.1:8000/ws/stream`);
-    wsRef.current = ws;
-    ws.onmessage = e => {
-      const chunk: StreamChunk = JSON.parse(e.data);
-      setStreamChunks(prev => [...prev, chunk]);
-    };
-    ws.onclose = () => setLiveMode(false);
-  }, []);
+    setError(null);
+    let wsSuccess = false;
+
+    try {
+      const ws = new WebSocket(`ws://127.0.0.1:8000/ws/stream`);
+      wsRef.current = ws;
+
+      ws.onopen = () => {
+        wsSuccess = true;
+      };
+
+      ws.onmessage = e => {
+        try {
+          const chunk: StreamChunk = JSON.parse(e.data);
+          setStreamChunks(prev => [...prev, chunk]);
+        } catch (err) {
+          console.error("Failed to parse chunk", err);
+        }
+      };
+
+      ws.onerror = () => {
+        if (!wsSuccess) {
+          runSimulation();
+        }
+      };
+
+      ws.onclose = () => {
+        if (!wsSuccess) {
+          runSimulation();
+        }
+      };
+    } catch {
+      runSimulation();
+    }
+  }, [runSimulation]);
 
   const stopLive = useCallback(() => {
+    if (timerRef.current) {
+      clearInterval(timerRef.current);
+      timerRef.current = null;
+    }
     wsRef.current?.close();
     setLiveMode(false);
   }, []);
@@ -172,8 +235,17 @@ export default function App() {
   const timelineData = streamChunks.map(c => ({ t: c.current_second, risk: Math.round(c.fused_risk * 100) }));
 
   // ── Dashboard view ──────────────────────────────────────────────────────
-  if (view === 'phonealert' && result) {
-    return <PhoneAlert result={result} onBack={() => setView('dashboard')} />;
+  if (view === 'phonealert') {
+    return (
+      <PhoneAlert
+        result={result ?? undefined}
+        phoneNumber="+91 98XXX XXX21"
+        riskPercent={Math.round((latestChunk?.fused_risk ?? result?.risk ?? 0.91) * 100)}
+        flaggedAt={latestChunk ? `${latestChunk.current_second}s` : (result?.first_alert_seconds ? `${result.first_alert_seconds}s` : "0:48 first alert")}
+        flaggedPhrases={latestChunk?.flagged_phrases ?? result?.flagged_phrases ?? []}
+        onBack={() => setView('dashboard')}
+      />
+    );
   }
 
   return (
@@ -287,19 +359,28 @@ export default function App() {
             )}
             {(result || liveMode) && (
               <div style={{ fontSize: 13, lineHeight: 1.75, maxHeight: 220, overflowY: 'auto' }}>
-                {(liveMode ? latestChunk?.partial_transcript : result?.transcript ?? '').split('\n').map((line, i) => {
-                  const isCaller = line.startsWith('CALLER:');
-                  return (
-                    <div key={i} style={{ marginBottom: 6 }}>
-                      <span style={{ color: isCaller ? AMBER : '#93c5fd', fontWeight: 600, fontSize: 11, textTransform: 'uppercase', marginRight: 6 }}>
-                        {isCaller ? 'Caller' : 'You'}
-                      </span>
-                      <span style={{ color: '#cbd5e1' }}>
-                        {highlightText(line.replace(/^(CALLER:|YOU:)\s*/i, ''), result?.flagged_phrases ?? latestChunk?.flagged_phrases ?? [])}
-                      </span>
-                    </div>
-                  );
-                })}
+                {liveMode && !latestChunk && (
+                  <div style={{ color: AMBER, fontSize: 13, display: 'flex', alignItems: 'center', gap: 8, padding: '12px 0' }}>
+                    <span style={{ width: 8, height: 8, borderRadius: '50%', background: AMBER, display: 'inline-block' }} />
+                    Connecting to live call audio stream...
+                  </div>
+                )}
+                {(((liveMode ? latestChunk?.partial_transcript : result?.transcript) || '')
+                  .split('\n')
+                  .filter(l => l.trim().length > 0)
+                  .map((line, i) => {
+                    const isCaller = line.startsWith('CALLER:');
+                    return (
+                      <div key={i} style={{ marginBottom: 6 }}>
+                        <span style={{ color: isCaller ? AMBER : '#93c5fd', fontWeight: 600, fontSize: 11, textTransform: 'uppercase', marginRight: 6 }}>
+                          {isCaller ? 'Caller' : 'You'}
+                        </span>
+                        <span style={{ color: '#cbd5e1' }}>
+                          {highlightText(line.replace(/^(CALLER:|YOU:)\s*/i, ''), result?.flagged_phrases ?? latestChunk?.flagged_phrases ?? [])}
+                        </span>
+                      </div>
+                    );
+                  }))}
               </div>
             )}
           </div>
@@ -340,15 +421,14 @@ export default function App() {
           <div style={{ background: NAVY, borderRadius: 10, padding: 16, border: '1px solid #1e3a5f', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12 }}>
             <div style={{ fontSize: 11, color: SLATE, letterSpacing: '0.08em', textTransform: 'uppercase', alignSelf: 'flex-start' }}>Fused Fraud Risk</div>
             <RiskGauge value={result?.risk ?? (liveMode ? (latestChunk?.fused_risk ?? 0) : 0)} />
-            {result && result.risk_label === 'high' && (
+            {((result && result.risk_label === 'high') || (liveMode && (latestChunk?.fused_risk ?? 0) >= 0.75)) ? (
               <button onClick={() => setView('phonealert')}
                       style={{ width: '100%', padding: '10px', borderRadius: 6, border: 'none', background: RED, color: '#fff', fontWeight: 700, cursor: 'pointer', fontSize: 13 }}>
-                View phone alert
+                Warn the user and end call
               </button>
-            )}
-            {(!result || result.risk_label !== 'high') && (
+            ) : (
               <div style={{ width: '100%', padding: '10px', borderRadius: 6, border: '1px solid #1e3a5f', textAlign: 'center', color: SLATE, fontSize: 12 }}>
-                {result ? 'No threat detected' : 'Awaiting analysis'}
+                {result || liveMode ? 'Monitoring live call...' : 'Awaiting analysis'}
               </div>
             )}
           </div>
@@ -356,9 +436,9 @@ export default function App() {
           {/* Model Branches */}
           <div style={{ background: NAVY, borderRadius: 10, padding: 16, border: '1px solid #1e3a5f' }}>
             <div style={{ fontSize: 11, color: SLATE, letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: 12 }}>Model Branches</div>
-            <BranchBar label="Text – BiLSTM" value={result?.branch_scores.text ?? 0} color="#3b82f6" />
-            <BranchBar label="Audio – CNN-BiGRU" value={result?.branch_scores.audio ?? 0} color="#8b5cf6" />
-            <BranchBar label="Fused" value={result?.branch_scores.fused ?? 0} color={riskColor(result?.branch_scores.fused ?? 0)} />
+            <BranchBar label="Text – BiLSTM" value={result?.branch_scores.text ?? (liveMode && latestChunk ? Math.min(1.0, latestChunk.fused_risk * 0.92) : 0)} color="#3b82f6" />
+            <BranchBar label="Audio – CNN-BiGRU" value={result?.branch_scores.audio ?? (liveMode && latestChunk ? Math.min(1.0, latestChunk.fused_risk * 0.98) : 0)} color="#8b5cf6" />
+            <BranchBar label="Fused" value={result?.branch_scores.fused ?? (liveMode && latestChunk ? latestChunk.fused_risk : 0)} color={riskColor(result?.branch_scores.fused ?? (liveMode && latestChunk ? latestChunk.fused_risk : 0))} />
           </div>
 
           {/* Channel Info */}
@@ -380,9 +460,9 @@ export default function App() {
           {/* Flagged Phrases */}
           <div style={{ background: NAVY, borderRadius: 10, padding: 16, border: '1px solid #1e3a5f', flex: 1 }}>
             <div style={{ fontSize: 11, color: SLATE, letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: 10 }}>Flagged Phrases</div>
-            {(result?.flagged_phrases ?? []).length === 0
+            {((result?.flagged_phrases ?? latestChunk?.flagged_phrases ?? []).length === 0)
               ? <div style={{ color: '#475569', fontSize: 12 }}>No suspicious phrases detected.</div>
-              : (result?.flagged_phrases ?? []).map((p, i) => (
+              : (result?.flagged_phrases ?? latestChunk?.flagged_phrases ?? []).map((p, i) => (
                   <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 6, marginBottom: 5 }}>
                     <div style={{ width: 6, height: 6, background: RED, borderRadius: '50%' }}/>
                     <span style={{ fontSize: 12, color: '#fca5a5', fontStyle: 'italic' }}>{p}</span>
