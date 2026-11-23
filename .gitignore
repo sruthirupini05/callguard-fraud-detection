@@ -27,6 +27,7 @@ data/synthetic/*
 *.flac
 *.ogg
 *.amr
+!data/sample_calls/audio/*.wav
 
 # Model Checkpoints & Pretrained Weights
 *.pt

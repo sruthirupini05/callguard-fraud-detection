@@ -1,4 +1,4 @@
-// API client & types for CallGuard backend
+// API client & types for CallGuard Research Workstation
 
 export interface BranchScores {
   text: number;
@@ -31,6 +31,19 @@ export interface ChannelInfo {
   wer: number | null;
 }
 
+export interface AudioTelemetry {
+  original_sample_rate: number;
+  original_channels: number;
+  duration_seconds: number;
+  speech_ratio: number;
+  snr_db: number;
+  noise_floor_db: number;
+  clipping_ratio: number;
+  dynamic_range_db: number;
+  waveform_envelope: number[];
+  vad_segments_count: number;
+}
+
 export interface AnalysisResult {
   risk: number;
   risk_label: 'low' | 'moderate' | 'high';
@@ -47,6 +60,61 @@ export interface AnalysisResult {
   first_alert_seconds: number | null;
   channel_info: ChannelInfo;
   duration_seconds: number;
+  audio_telemetry?: AudioTelemetry;
+}
+
+export interface EarlyPrefixResult {
+  prefix_seconds: number;
+  evaluated_duration: number;
+  risk: number;
+  verdict: string;
+  text_prob: number;
+  audio_prob: number;
+  fused_prob: number;
+  detection_latency_ms: number;
+  flagged_phrases: string[];
+  scam_type: string;
+}
+
+export interface EarlyDetectionResponse {
+  call_id: string;
+  total_duration: number;
+  prefix_evaluations: EarlyPrefixResult[];
+  recommended_termination_second: number | null;
+  time_saved_seconds: number;
+}
+
+export interface ChannelLabComparison {
+  codec: string;
+  snr_db: number;
+  packet_loss: number;
+  clean_snr_db: number;
+  degraded_snr_db: number;
+  measured_wer: number;
+  clean_risk: number;
+  degraded_risk: number;
+  text_trust_shift: {
+    clean_text_trust: number;
+    clean_audio_trust: number;
+    degraded_text_trust: number;
+    degraded_audio_trust: number;
+  };
+  clean_waveform: number[];
+  degraded_waveform: number[];
+  clean_transcript: string;
+  degraded_transcript: string;
+}
+
+export interface SampleCallInfo {
+  call_id: string;
+  filename: string;
+  title: string;
+  duration_seconds: number;
+  category: string;
+  scam_type: string;
+  ground_truth_label: number;
+  audio_url: string;
+  reference_transcript: string;
 }
 
 export interface StreamChunk {
@@ -84,6 +152,45 @@ export async function analyzeCall(
 
   const res = await fetch(`${API_BASE}/analyze`, { method: 'POST', body: form });
   if (!res.ok) throw new Error(`API error ${res.status}: ${res.statusText}`);
+  return res.json();
+}
+
+export async function getSampleCalls(): Promise<SampleCallInfo[]> {
+  const res = await fetch(`${API_BASE}/sample_calls`);
+  if (!res.ok) throw new Error(`API error ${res.status}`);
+  return res.json();
+}
+
+export async function runEarlyDetection(callId: string, transcript?: string): Promise<EarlyDetectionResponse> {
+  const form = new FormData();
+  form.append('call_id', callId);
+  if (transcript) form.append('transcript_override', transcript);
+
+  const res = await fetch(`${API_BASE}/early_detection`, { method: 'POST', body: form });
+  if (!res.ok) throw new Error(`Early detection error ${res.status}`);
+  return res.json();
+}
+
+export async function runChannelLab(
+  transcript: string,
+  codec = 'amr_nb',
+  snrDb = 5.0,
+  packetLoss = 0.03
+): Promise<ChannelLabComparison> {
+  const form = new FormData();
+  form.append('transcript', transcript);
+  form.append('codec', codec);
+  form.append('snr_db', String(snrDb));
+  form.append('packet_loss', String(packetLoss));
+
+  const res = await fetch(`${API_BASE}/channel_lab`, { method: 'POST', body: form });
+  if (!res.ok) throw new Error(`Channel lab error ${res.status}`);
+  return res.json();
+}
+
+export async function getEvaluationBenchmarks(): Promise<any> {
+  const res = await fetch(`${API_BASE}/evaluation_benchmarks`);
+  if (!res.ok) throw new Error(`Benchmarks error ${res.status}`);
   return res.json();
 }
 

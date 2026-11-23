@@ -1,14 +1,14 @@
 """
-Pydantic API request and response schemas for CallGuard.
-Updated with:
-- Calibrated probability & dynamic uncertainty intervals
-- Multimodal Gate Weight trust distribution
-- Semantic Intent breakdown & Scam Taxonomy
-- Caller metadata and CLI spoofing diagnostics
-- Feedback / False Positive reporting schema
+Pydantic API request and response schemas for CallGuard Research Workstation.
+Covers:
+- Full multimodal call analysis with real audio telemetry & VAD
+- Early detection prefix evaluation (5s, 10s, 15s, 30s, Full)
+- Channel degradation laboratory comparison (Clean vs Degraded)
+- Sample demonstration dataset catalogue & audio streaming
+- Audit history & feedback logging
 """
 
-from typing import List, Dict, Optional, Any, Tuple
+from typing import List, Dict, Optional, Any
 from pydantic import BaseModel, Field
 
 
@@ -43,6 +43,19 @@ class ChannelInfo(BaseModel):
     wer: Optional[float] = Field(None, description="Dynamic Word Error Rate against reference")
 
 
+class AudioTelemetry(BaseModel):
+    original_sample_rate: int = 16000
+    original_channels: int = 1
+    duration_seconds: float = 0.0
+    speech_ratio: float = 0.0
+    snr_db: float = 0.0
+    noise_floor_db: float = -45.0
+    clipping_ratio: float = 0.0
+    dynamic_range_db: float = 48.0
+    waveform_envelope: List[float] = Field(default_factory=list)
+    vad_segments_count: int = 0
+
+
 class CallAnalysisResponse(BaseModel):
     risk: float = Field(..., description="Calibrated fused fraud probability (0.0 to 1.0)")
     risk_label: str = Field(..., description="Verdict category: 'low', 'moderate', 'high'")
@@ -59,6 +72,56 @@ class CallAnalysisResponse(BaseModel):
     first_alert_seconds: Optional[int] = Field(None, description="Earliest second fraud was reliably flagged")
     channel_info: ChannelInfo
     duration_seconds: float = Field(..., description="Total audio length analyzed")
+    audio_telemetry: Optional[AudioTelemetry] = None
+
+
+class EarlyPrefixResult(BaseModel):
+    prefix_seconds: int
+    evaluated_duration: float
+    risk: float
+    verdict: str
+    text_prob: float
+    audio_prob: float
+    fused_prob: float
+    detection_latency_ms: float
+    flagged_phrases: List[str] = Field(default_factory=list)
+    scam_type: str = "Analyzing..."
+
+
+class EarlyDetectionResponse(BaseModel):
+    call_id: str
+    total_duration: float
+    prefix_evaluations: List[EarlyPrefixResult]
+    recommended_termination_second: Optional[int] = None
+    time_saved_seconds: float = 0.0
+
+
+class ChannelLabComparison(BaseModel):
+    codec: str
+    snr_db: float
+    packet_loss: float
+    clean_snr_db: float
+    degraded_snr_db: float
+    measured_wer: float
+    clean_risk: float
+    degraded_risk: float
+    text_trust_shift: Dict[str, float]
+    clean_waveform: List[float]
+    degraded_waveform: List[float]
+    clean_transcript: str
+    degraded_transcript: str
+
+
+class SampleCallInfo(BaseModel):
+    call_id: str
+    filename: str
+    title: str
+    duration_seconds: float
+    category: str
+    scam_type: str
+    ground_truth_label: int
+    audio_url: str
+    reference_transcript: str
 
 
 class StreamingChunkMessage(BaseModel):
