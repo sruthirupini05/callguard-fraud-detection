@@ -6,7 +6,7 @@
 [![FastAPI](https://img.shields.io/badge/API-FastAPI-009688.svg)](src/api/)
 [![React 19](https://img.shields.io/badge/Frontend-React%20%2B%20Vite%20%2B%20TS-61DAFB.svg)](app/frontend/)
 
-> **Academic Final-Year B.Tech Capstone Project**  
+> **Academic Final-Year B.Tech Project**  
 > **Author:** Sruthi Rupini ([@sruthirupini05](https://github.com/sruthirupini05))  
 > **Repository:** `sruthirupini05/callguard-fraud-detection`
 
